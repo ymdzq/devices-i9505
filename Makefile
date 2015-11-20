@@ -7,7 +7,7 @@
 # The default value is base.
 # Support values: base, base_cm, base_mt6592 and other devices in the future.
 #-----------------------------------------------------------------------------
-#BASE := base_cm
+BASE := base_cm-5.1
 
 ##############################################################################
 # The value is used for resource adapter with the aapt tool.
@@ -54,9 +54,9 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth KeyChain HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
+vendor_saved_apps := Bluetooth NfcNci KeyChain Tag HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService
+                     ProxyHandler Shell DefaultContainerService WAPPushManager Stk TimeService SamsungDoze
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -108,7 +108,7 @@ board_saved_files := lib/libwebviewchromium.so
 # The command idtoname how to use: first use "apktool d source/system/framework/framework-res.apk other/TMP/framework-res",
 # and then use "idtoname other/TMP/framework-res/res/values/public_master.xml XXXX/smali"(XXXX is the directory where you decode board system apk).
 #-----------------------------------------------------------------------------
-#board_modify_apps := TeleService
+board_modify_apps := TeleService Keyguard SystemUI Telecom FlymeLauncher MmsService TelephonyProvider
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the board framework jar.
@@ -141,8 +141,8 @@ board_saved_files := lib/libwebviewchromium.so
 # The default value is Nexus-5_Unofficial.
 # You should configure the property according to your device and your ID with replace the "Nexus-5_Unofficial".
 override_property += \
-    ro.flyme.romer=Unofficial \
-    ro.product.model_romer=Nexus-5_Unofficial
+    ro.flyme.romer=shiro \
+    ro.product.model_romer=I9505_shiro
 
 ##############################################################################
 # The value decides which property you will remove from the build.prop.
@@ -158,7 +158,7 @@ override_property += \
 # Set it to be false when you want to escape the verification.
 # Default: true
 #-----------------------------------------------------------------------------
-#USE_ASSERTIONS_IN_UPDATER_SCRIPT := false
+USE_ASSERTIONS_IN_UPDATER_SCRIPT := false
 
 ##############################################################################
 # Defines whether reduces useless resources, only keep the resources of preferred configuration, like current density or locale.
