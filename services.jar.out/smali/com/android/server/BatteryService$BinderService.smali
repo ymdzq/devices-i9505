@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 1015
+    .line 994
     iput-object p1, p0, Lcom/android/server/BatteryService$BinderService;->this$0:Lcom/android/server/BatteryService;
 
     invoke-direct {p0}, Landroid/app/IBatteryService$Stub;-><init>()V
@@ -37,7 +37,7 @@
     .param p2, "x1"    # Lcom/android/server/BatteryService$1;
 
     .prologue
-    .line 1015
+    .line 994
     invoke-direct {p0, p1}, Lcom/android/server/BatteryService$BinderService;-><init>(Lcom/android/server/BatteryService;)V
 
     return-void
@@ -52,7 +52,7 @@
     .param p3, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 1023
+    .line 1002
     iget-object v0, p0, Lcom/android/server/BatteryService$BinderService;->this$0:Lcom/android/server/BatteryService;
 
     # getter for: Lcom/android/server/BatteryService;->mContext:Landroid/content/Context;
@@ -68,7 +68,7 @@
 
     if-eqz v0, :cond_0
 
-    .line 1026
+    .line 1005
     new-instance v0, Ljava/lang/StringBuilder;
 
     invoke-direct {v0}, Ljava/lang/StringBuilder;-><init>()V
@@ -107,16 +107,16 @@
 
     invoke-virtual {p2, v0}, Ljava/io/PrintWriter;->println(Ljava/lang/String;)V
 
-    .line 1033
+    .line 1012
     :goto_0
     return-void
 
-    .line 1032
+    .line 1011
     :cond_0
     iget-object v0, p0, Lcom/android/server/BatteryService$BinderService;->this$0:Lcom/android/server/BatteryService;
 
     # invokes: Lcom/android/server/BatteryService;->dumpInternal(Ljava/io/PrintWriter;[Ljava/lang/String;)V
-    invoke-static {v0, p2, p3}, Lcom/android/server/BatteryService;->access$2100(Lcom/android/server/BatteryService;Ljava/io/PrintWriter;[Ljava/lang/String;)V
+    invoke-static {v0, p2, p3}, Lcom/android/server/BatteryService;->access$1700(Lcom/android/server/BatteryService;Ljava/io/PrintWriter;[Ljava/lang/String;)V
 
     goto :goto_0
 .end method
@@ -130,7 +130,7 @@
     .end annotation
 
     .prologue
-    .line 1018
+    .line 997
     iget-object v0, p0, Lcom/android/server/BatteryService$BinderService;->this$0:Lcom/android/server/BatteryService;
 
     const-class v1, Landroid/os/BatteryManagerInternal;

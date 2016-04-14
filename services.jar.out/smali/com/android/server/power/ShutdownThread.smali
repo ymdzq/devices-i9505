@@ -161,7 +161,17 @@
     return-void
 .end method
 
-.method static synthetic access$002(Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic access$000()Z
+    .locals 1
+
+    .prologue
+    .line 74
+    sget-boolean v0, Lcom/android/server/power/ShutdownThread;->mRebootSafeMode:Z
+
+    return v0
+.end method
+
+.method static synthetic access$102(Ljava/lang/String;)Ljava/lang/String;
     .locals 0
     .param p0, "x0"    # Ljava/lang/String;
 
@@ -172,7 +182,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$100()V
+.method static synthetic access$200()V
     .locals 0
 
     .prologue
@@ -182,7 +192,7 @@
     return-void
 .end method
 
-.method static synthetic access$202(Z)Z
+.method static synthetic access$302(Z)Z
     .locals 0
     .param p0, "x0"    # Z
 
@@ -193,7 +203,7 @@
     return p0
 .end method
 
-.method static synthetic access$300(Landroid/content/Context;)V
+.method static synthetic access$400(Landroid/content/Context;)V
     .locals 0
     .param p0, "x0"    # Landroid/content/Context;
 
@@ -204,7 +214,7 @@
     return-void
 .end method
 
-.method static synthetic access$400()Landroid/media/MediaPlayer;
+.method static synthetic access$500()Landroid/media/MediaPlayer;
     .locals 1
 
     .prologue
@@ -214,7 +224,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$402(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
+.method static synthetic access$502(Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
     .locals 0
     .param p0, "x0"    # Landroid/media/MediaPlayer;
 
@@ -225,7 +235,7 @@
     return-object p0
 .end method
 
-.method static synthetic access$500(Lcom/android/server/power/ShutdownThread;)Ljava/lang/Object;
+.method static synthetic access$600(Lcom/android/server/power/ShutdownThread;)Ljava/lang/Object;
     .locals 1
     .param p0, "x0"    # Lcom/android/server/power/ShutdownThread;
 
@@ -236,7 +246,7 @@
     return-object v0
 .end method
 
-.method static synthetic access$602(Lcom/android/server/power/ShutdownThread;Z)Z
+.method static synthetic access$702(Lcom/android/server/power/ShutdownThread;Z)Z
     .locals 0
     .param p0, "x0"    # Lcom/android/server/power/ShutdownThread;
     .param p1, "x1"    # Z
@@ -1417,7 +1427,7 @@
 
     .line 173
     .local v0, "actions":Ljava/lang/String;
-    if-nez v0, :cond_4
+    if-nez v0, :cond_5
 
     .line 174
     invoke-virtual {p0}, Landroid/content/Context;->getResources()Landroid/content/res/Resources;
@@ -1450,7 +1460,7 @@
 
     move-result v10
 
-    if-eqz v10, :cond_5
+    if-eqz v10, :cond_6
 
     .line 182
     const/4 v8, 0x1
@@ -1471,7 +1481,7 @@
     .local v6, "longPressBehavior":I
     sget-boolean v10, Lcom/android/server/power/ShutdownThread;->mRebootSafeMode:Z
 
-    if-eqz v10, :cond_6
+    if-eqz v10, :cond_7
 
     const v7, #android:string@reboot_safemode_confirm#t
 
@@ -1510,7 +1520,7 @@
     invoke-static {v10, v11}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 199
-    if-eqz p1, :cond_b
+    if-eqz p1, :cond_c
 
     .line 200
     new-instance v3, Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
@@ -1551,7 +1561,7 @@
 
     sget-boolean v10, Lcom/android/server/power/ShutdownThread;->mRebootSafeMode:Z
 
-    if-eqz v10, :cond_8
+    if-eqz v10, :cond_9
 
     const v10, #android:string@reboot_safemode_title#t
 
@@ -1562,9 +1572,14 @@
 
     .line 215
     .local v4, "confirmDialogBuilder":Landroid/app/AlertDialog$Builder;
-    if-nez v2, :cond_a
+    if-eqz v2, :cond_4
+
+    sget-boolean v10, Lcom/android/server/power/ShutdownThread;->mRebootSafeMode:Z
+
+    if-eqz v10, :cond_b
 
     .line 216
+    :cond_4
     invoke-virtual {v4, v7}, Landroid/app/AlertDialog$Builder;->setMessage(I)Landroid/app/AlertDialog$Builder;
 
     .line 223
@@ -1636,7 +1651,7 @@
     .line 177
     .restart local v0    # "actions":Ljava/lang/String;
     .restart local v8    # "showRebootOption":Z
-    :cond_4
+    :cond_5
     const-string v10, "\\|"
 
     invoke-virtual {v0, v10}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
@@ -1648,23 +1663,23 @@
 
     .line 180
     .restart local v5    # "i":I
-    :cond_5
+    :cond_6
     add-int/lit8 v5, v5, 0x1
 
     goto/16 :goto_2
 
     .line 188
     .restart local v6    # "longPressBehavior":I
-    :cond_6
+    :cond_7
     const/4 v10, 0x2
 
-    if-ne v6, v10, :cond_7
+    if-ne v6, v10, :cond_8
 
     const v7, #android:string@shutdown_confirm_question#t
 
     goto/16 :goto_3
 
-    :cond_7
+    :cond_8
     const v7, #android:string@shutdown_confirm#t
 
     goto/16 :goto_3
@@ -1674,21 +1689,21 @@
     .restart local v3    # "closer":Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
     .restart local v7    # "resourceId":I
     .restart local v9    # "uiContext":Landroid/content/Context;
-    :cond_8
-    if-eqz v8, :cond_9
+    :cond_9
+    if-eqz v8, :cond_a
 
     const v10, #android:string@reboot_title#t
 
     goto :goto_4
 
-    :cond_9
+    :cond_a
     const v10, #android:string@power_off#t
 
     goto :goto_4
 
     .line 218
     .restart local v4    # "confirmDialogBuilder":Landroid/app/AlertDialog$Builder;
-    :cond_a
+    :cond_b
     const v10, #android:array@shutdown_reboot_options#t
 
     const/4 v11, 0x0
@@ -1702,7 +1717,7 @@
     .end local v3    # "closer":Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
     .end local v4    # "confirmDialogBuilder":Landroid/app/AlertDialog$Builder;
     .end local v9    # "uiContext":Landroid/content/Context;
-    :cond_b
+    :cond_c
     invoke-static {p0}, Lcom/android/server/power/ShutdownThread;->beginShutdownSequence(Landroid/content/Context;)V
 
     goto/16 :goto_0

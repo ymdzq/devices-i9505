@@ -140,6 +140,8 @@
     <string name="perf_profile_pwrsv">‏‮Power‬‏ ‏‮save‬‏</string>
     <string name="perf_profile_bal">‏‮Balanced‬‏</string>
     <string name="perf_profile_perf">‏‮Performance‬‏</string>
+    <string name="perf_profile_bias_power">‏‮Efficiency‬‏</string>
+    <string name="perf_profile_bias_perf">‏‮Quick‬‏</string>
     <string name="theme_install_error_title">‏‮Failed‬‏ ‏‮to‬‏ ‏‮install‬‏ ‏‮theme‬‏</string>
     <string name="theme_install_error_message">‏‮%s‬‏ ‏‮failed‬‏ ‏‮to‬‏ ‏‮install‬‏</string>
     <string name="theme_reset_notification_title">‏‮Theme‬‏ ‏‮reset‬‏</string>
@@ -215,6 +217,8 @@
     <string name="silent_mode_none">‏‮None‬‏</string>
     <string name="subscription_change_disabled_wifi_ap">‏‮Disabled‬‏ ‏‮Wi-Fi‬‏ ‏‮hotspot‬‏ ‏‮due‬‏ ‏‮to‬‏ ‏‮SIM‬‏ ‏‮subscription‬‏ ‏‮change‬‏</string>
     <string name="notify_turn_wifi_off_title">‏‮Turn‬‏ ‏‮Wi-Fi‬‏ ‏‮off‬‏</string>
+    <string name="permlab_thirdPartyKeyguard">‏‮third‬‏ ‏‮party‬‏ ‏‮lock‬‏ ‏‮screen‬‏</string>
+    <string name="permdesc_thirdPartyKeyguard">‏‮Allows‬‏ ‏‮an‬‏ ‏‮app‬‏ ‏‮to‬‏ ‏‮be‬‏ ‏‮used‬‏ ‏‮as‬‏ ‏‮an‬‏ ‏‮insecure‬‏ ‏‮lock‬‏ ‏‮screen.‬‏</string>
     <string name="widget_default_package_name" />
     <string name="widget_default_class_name" />
     <string name="db_default_journal_mode">‏‮PERSIST‬‏</string>

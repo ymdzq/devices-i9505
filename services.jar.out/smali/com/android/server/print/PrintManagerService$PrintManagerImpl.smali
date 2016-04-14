@@ -739,7 +739,7 @@
 
     iget-object v3, v0, Lcom/android/server/print/PrintManagerService$PrintManagerImpl;->mContext:Landroid/content/Context;
 
-    const v5, 0x1040740
+    const v5, 0x1040742
 
     const/4 v6, 0x1
 
@@ -761,7 +761,7 @@
 
     iget-object v3, v0, Lcom/android/server/print/PrintManagerService$PrintManagerImpl;->mContext:Landroid/content/Context;
 
-    const v5, 0x1040741
+    const v5, 0x1040743
 
     invoke-virtual {v3, v5}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

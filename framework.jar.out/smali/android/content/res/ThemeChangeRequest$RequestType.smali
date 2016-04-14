@@ -52,7 +52,7 @@
 
     const/4 v2, 0x0
 
-    .line 171
+    .line 175
     new-instance v0, Landroid/content/res/ThemeChangeRequest$RequestType;
 
     const-string v1, "USER_REQUEST"
@@ -61,7 +61,7 @@
 
     sput-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->USER_REQUEST:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 172
+    .line 176
     new-instance v0, Landroid/content/res/ThemeChangeRequest$RequestType;
 
     const-string v1, "USER_REQUEST_MIXNMATCH"
@@ -70,7 +70,7 @@
 
     sput-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->USER_REQUEST_MIXNMATCH:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 173
+    .line 177
     new-instance v0, Landroid/content/res/ThemeChangeRequest$RequestType;
 
     const-string v1, "THEME_UPDATED"
@@ -79,7 +79,7 @@
 
     sput-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->THEME_UPDATED:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 174
+    .line 178
     new-instance v0, Landroid/content/res/ThemeChangeRequest$RequestType;
 
     const-string v1, "THEME_REMOVED"
@@ -88,7 +88,7 @@
 
     sput-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->THEME_REMOVED:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 175
+    .line 179
     new-instance v0, Landroid/content/res/ThemeChangeRequest$RequestType;
 
     const-string v1, "THEME_RESET"
@@ -97,7 +97,7 @@
 
     sput-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->THEME_RESET:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 170
+    .line 174
     const/4 v0, 0x5
 
     new-array v0, v0, [Landroid/content/res/ThemeChangeRequest$RequestType;
@@ -136,7 +136,7 @@
     .end annotation
 
     .prologue
-    .line 170
+    .line 174
     invoke-direct {p0, p1, p2}, Ljava/lang/Enum;-><init>(Ljava/lang/String;I)V
 
     return-void
@@ -147,7 +147,7 @@
     .param p0, "name"    # Ljava/lang/String;
 
     .prologue
-    .line 170
+    .line 174
     const-class v0, Landroid/content/res/ThemeChangeRequest$RequestType;
 
     invoke-static {v0, p0}, Ljava/lang/Enum;->valueOf(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;
@@ -163,7 +163,7 @@
     .locals 1
 
     .prologue
-    .line 170
+    .line 174
     sget-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->$VALUES:[Landroid/content/res/ThemeChangeRequest$RequestType;
 
     invoke-virtual {v0}, [Landroid/content/res/ThemeChangeRequest$RequestType;->clone()Ljava/lang/Object;

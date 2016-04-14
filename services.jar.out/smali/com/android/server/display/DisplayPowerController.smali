@@ -422,7 +422,7 @@
 
     .line 275
     .local v22, "resources":Landroid/content/res/Resources;
-    const v3, 0x10e0056
+    const v3, 0x10e0057
 
     move-object/from16 v0, v22
 
@@ -436,7 +436,7 @@
 
     .line 278
     .local v24, "screenBrightnessSettingMinimum":I
-    const v3, 0x10e0059
+    const v3, 0x10e005a
 
     move-object/from16 v0, v22
 
@@ -453,7 +453,7 @@
     iput v3, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessDozeConfig:I
 
     .line 281
-    const v3, 0x10e005e
+    const v3, 0x10e005f
 
     move-object/from16 v0, v22
 
@@ -470,7 +470,7 @@
     iput v3, v0, Lcom/android/server/display/DisplayPowerController;->mScreenBrightnessDimConfig:I
 
     .line 284
-    const v3, 0x10e005f
+    const v3, 0x10e0060
 
     move-object/from16 v0, v22
 
@@ -655,7 +655,7 @@
     iput-boolean v3, v0, Lcom/android/server/display/DisplayPowerController;->mUseSoftwareAutoBrightnessConfig:Z
 
     .line 307
-    const v3, 0x112004f
+    const v3, 0x112004d
 
     move-object/from16 v0, v22
 
@@ -668,7 +668,7 @@
     iput-boolean v3, v0, Lcom/android/server/display/DisplayPowerController;->mAllowAutoBrightnessWhileDozingConfig:Z
 
     .line 310
-    const v3, 0x10e005c
+    const v3, 0x10e005d
 
     move-object/from16 v0, v22
 
@@ -678,7 +678,7 @@
 
     .line 312
     .local v13, "lightSensorRate":I
-    const v3, 0x10e005a
+    const v3, 0x10e005b
 
     move-object/from16 v0, v22
 
@@ -690,7 +690,7 @@
 
     .line 314
     .local v14, "brighteningLightDebounce":J
-    const v3, 0x10e005b
+    const v3, 0x10e005c
 
     move-object/from16 v0, v22
 
@@ -704,7 +704,7 @@
 
     .line 316
     .local v16, "darkeningLightDebounce":J
-    const v3, 0x1120050
+    const v3, 0x112004e
 
     move-object/from16 v0, v22
 
@@ -714,7 +714,7 @@
 
     .line 318
     .local v18, "autoBrightnessResetAmbientLuxAfterWarmUp":Z
-    const v3, 0x10e005d
+    const v3, 0x10e005e
 
     move-object/from16 v0, v22
 
@@ -751,7 +751,7 @@
 
     .line 326
     .local v23, "screenBrightness":[I
-    const v3, 0x10e0062
+    const v3, 0x10e0063
 
     move-object/from16 v0, v22
 

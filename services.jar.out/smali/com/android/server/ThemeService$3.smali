@@ -36,7 +36,7 @@
     .locals 0
 
     .prologue
-    .line 1184
+    .line 1197
     iput-object p1, p0, Lcom/android/server/ThemeService$3;->this$0:Lcom/android/server/ThemeService;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -52,7 +52,7 @@
     .param p2, "rhs"    # Ljava/io/File;
 
     .prologue
-    .line 1187
+    .line 1200
     invoke-virtual {p1}, Ljava/io/File;->lastModified()J
 
     move-result-wide v0
@@ -70,17 +70,13 @@
 
 .method public bridge synthetic compare(Ljava/lang/Object;Ljava/lang/Object;)I
     .locals 1
-    .param p1, "x0"    # Ljava/lang/Object;
-    .param p2, "x1"    # Ljava/lang/Object;
 
     .prologue
-    .line 1184
+    .line 1197
     check-cast p1, Ljava/io/File;
 
-    .end local p1    # "x0":Ljava/lang/Object;
     check-cast p2, Ljava/io/File;
 
-    .end local p2    # "x1":Ljava/lang/Object;
     invoke-virtual {p0, p1, p2}, Lcom/android/server/ThemeService$3;->compare(Ljava/io/File;Ljava/io/File;)I
 
     move-result v0

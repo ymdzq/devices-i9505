@@ -11658,6 +11658,7 @@
 
     goto :goto_b
 
+    .line 1516
     .end local v27    # "e":Landroid/os/RemoteException;
     :cond_1a
     move-object/from16 v0, p2

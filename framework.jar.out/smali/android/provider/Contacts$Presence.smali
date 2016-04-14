@@ -4,8 +4,8 @@
 
 # interfaces
 .implements Landroid/provider/BaseColumns;
-.implements Landroid/provider/Contacts$PeopleColumns;
 .implements Landroid/provider/Contacts$PresenceColumns;
+.implements Landroid/provider/Contacts$PeopleColumns;
 
 
 # annotations
@@ -68,33 +68,40 @@
     .end annotation
 
     .prologue
+    .line 1642
     packed-switch p0, :pswitch_data_0
 
-    const v0, #android:drawable@presence_offline#t
+    .line 1658
+    const v0, 0x108006a
 
     :goto_0
     return v0
 
+    .line 1644
     :pswitch_0
-    const v0, #android:drawable@presence_online#t
+    const v0, 0x108006b
 
     goto :goto_0
 
+    .line 1648
     :pswitch_1
-    const v0, #android:drawable@presence_away#t
+    const v0, 0x1080067
 
     goto :goto_0
 
+    .line 1651
     :pswitch_2
-    const v0, #android:drawable@presence_busy#t
+    const v0, 0x1080068
 
     goto :goto_0
 
+    .line 1654
     :pswitch_3
-    const v0, #android:drawable@presence_invisible#t
+    const v0, 0x1080069
 
     goto :goto_0
 
+    .line 1642
     nop
 
     :pswitch_data_0

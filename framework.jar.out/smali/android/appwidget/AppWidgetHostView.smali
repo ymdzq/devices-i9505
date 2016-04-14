@@ -533,7 +533,6 @@
 
 .method public bridge synthetic generateLayoutParams(Landroid/util/AttributeSet;)Landroid/view/ViewGroup$LayoutParams;
     .locals 1
-    .param p1, "x0"    # Landroid/util/AttributeSet;
 
     .prologue
     .line 58
@@ -826,7 +825,7 @@
 
     .line 585
     .local v0, "tv":Landroid/widget/TextView;
-    const v1, 0x104060b
+    const v1, 0x104060d
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(I)V
 

@@ -1239,7 +1239,8 @@
     .param p1, "string"    # Ljava/lang/String;
 
     .prologue
-    const v0, #android:string@sendText#t
+    .line 199
+    const v0, 0x104057e
 
     invoke-virtual {p0, v0}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

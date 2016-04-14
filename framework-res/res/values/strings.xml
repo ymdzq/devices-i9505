@@ -143,6 +143,8 @@
     <string name="perf_profile_pwrsv">Power save</string>
     <string name="perf_profile_bal">Balanced</string>
     <string name="perf_profile_perf">Performance</string>
+    <string name="perf_profile_bias_power">Efficiency</string>
+    <string name="perf_profile_bias_perf">Quick</string>
     <string name="theme_install_error_title">Failed to install theme</string>
     <string name="theme_install_error_message">%s failed to install</string>
     <string name="theme_reset_notification_title">Theme reset</string>
@@ -219,6 +221,8 @@
     <string name="silent_mode_none">None</string>
     <string name="subscription_change_disabled_wifi_ap">Disabled Wi-Fi hotspot due to SIM subscription change</string>
     <string name="notify_turn_wifi_off_title">Turn Wi-Fi off</string>
+    <string name="permlab_thirdPartyKeyguard">third party lock screen</string>
+    <string name="permdesc_thirdPartyKeyguard">Allows an app to be used as an insecure lock screen.</string>
     <string name="config_ethernet_iface_regex">eth\\d</string>
     <string name="config_mobile_hotspot_provision_app_no_ui" />
     <string name="config_mobile_hotspot_provision_response" />
@@ -272,7 +276,7 @@
     <string name="config_persistentDataPackageName" />
     <string name="config_deviceKeyHandlerLib" />
     <string name="config_deviceKeyHandlerClass" />
-    <string name="config_webViewPackageName">com.android.webview</string>
+    <string name="config_webViewPackageName">com.google.android.webview</string>
     <string name="config_alternateWebViewPackageName">com.google.android.webview</string>
     <string name="config_partial_segment_expire_age">2592000000</string>
     <string name="config_rat_2g">2G</string>

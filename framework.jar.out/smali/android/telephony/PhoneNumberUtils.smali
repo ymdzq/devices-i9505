@@ -8239,6 +8239,7 @@
     .param p3, "defaultCountryIso"    # Ljava/lang/String;
 
     .prologue
+
     long-to-int v0, p0
 
     invoke-static {v0, p2, p3}, Landroid/telephony/PhoneNumberUtils;->isPotentialEmergencyNumber(ILjava/lang/String;Ljava/lang/String;)Z

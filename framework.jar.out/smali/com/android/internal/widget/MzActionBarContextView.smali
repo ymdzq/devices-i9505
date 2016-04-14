@@ -69,10 +69,12 @@
     .param p2, "attrs"    # Landroid/util/AttributeSet;
 
     .prologue
-    const v0, #android:attr@actionModeStyle#t
+    .line 82
+    const v0, 0x1010394
 
     invoke-direct {p0, p1, p2, v0}, Lcom/android/internal/widget/MzActionBarContextView;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
+    .line 83
     return-void
 .end method
 
@@ -159,7 +161,7 @@
     .line 108
     const/4 v1, 0x5
 
-    const v2, #android:layout@action_mode_close_item#t
+    const v2, 0x109001f
 
     invoke-virtual {v0, v1, v2}, Landroid/content/res/TypedArray;->getResourceId(II)I
 
@@ -222,11 +224,13 @@
 
     move-result-object v2
 
+    .line 213
     .local v2, "inflater":Landroid/view/LayoutInflater;
-    const v3, #android:layout@action_bar_title_item#t
+    const v3, 0x109001a
 
     invoke-virtual {v2, v3, p0}, Landroid/view/LayoutInflater;->inflate(ILandroid/view/ViewGroup;)Landroid/view/View;
 
+    .line 214
     invoke-virtual {p0}, Lcom/android/internal/widget/MzActionBarContextView;->getChildCount()I
 
     move-result v3
@@ -244,7 +248,7 @@
     .line 215
     iget-object v3, p0, Lcom/android/internal/widget/MzActionBarContextView;->mTitleLayout:Landroid/widget/LinearLayout;
 
-    const v7, #android:id@action_bar_title#t
+    const v7, 0x10202b7
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -257,7 +261,7 @@
     .line 216
     iget-object v3, p0, Lcom/android/internal/widget/MzActionBarContextView;->mTitleLayout:Landroid/widget/LinearLayout;
 
-    const v7, #android:id@action_bar_subtitle#t
+    const v7, 0x10202b8
 
     invoke-virtual {v3, v7}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -745,7 +749,7 @@
     .line 663
     iget-object v1, p0, Lcom/android/internal/widget/MzActionBarContextView;->mTitleLayout:Landroid/widget/LinearLayout;
 
-    const v2, #android:id@up#t
+    const v2, 0x102003b
 
     invoke-virtual {v1, v2}, Landroid/widget/LinearLayout;->findViewById(I)Landroid/view/View;
 
@@ -939,7 +943,7 @@
     :goto_0
     iget-object v5, p0, Lcom/android/internal/widget/MzActionBarContextView;->mClose:Landroid/view/View;
 
-    const v6, #android:id@action_mode_close_button#t
+    const v6, 0x10202b9
 
     invoke-virtual {v5, v6}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

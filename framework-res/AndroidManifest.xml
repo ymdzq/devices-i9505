@@ -591,6 +591,7 @@
     <permission android:description="@string/permdesc_writeThemesDesc" android:label="@string/permlab_writeThemes" android:name="android.permission.WRITE_THEMES" android:protectionLevel="system|signature"/>
     <permission android:description="@string/permdesc_accessTorchService" android:label="@string/permlab_accessTorchService" android:name="android.permission.ACCESS_TORCH_SERVICE" android:protectionLevel="signature"/>
     <permission android:description="@string/permdesc_accessFingerprintService" android:label="@string/permlab_accessFingerprintService" android:name="android.permission.ACCESS_FINGERPRINT_SERVICE" android:protectionLevel="system|signature"/>
+    <permission android:description="@string/permdesc_thirdPartyKeyguard" android:label="@string/permlab_thirdPartyKeyguard" android:name="android.permission.THIRD_PARTY_KEYGUARD" android:protectionLevel="system|signature"/>
     <permission android:name="android.permission.send.MEIZU_FINDPHONE_CHANGED" android:protectionLevel="signatureOrSystem"/>
     <permission android:name="android.permission.MEIZU_CONTROL_PACKAGE_PERMISSIONS" android:protectionLevel="signatureOrSystem"/>
     <uses-permission android:name="android.permission.CONFIRM_FULL_BACKUP"/>
@@ -710,5 +711,11 @@
                 <data android:scheme="package"/>
             </intent-filter>
         </receiver>
+        <activity android:configChanges="orientation|screenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="standard" android:name="com.meizu.app.AccessApplication" android:needAccessControl="false" android:noHistory="true" android:screenOrientation="portrait" android:uiOptions="splitActionBarWhenNarrow" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.content.pm.CONFIRM_ACCESS_APPCATONS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
     </application>
 </manifest>

@@ -5634,13 +5634,9 @@
     invoke-virtual {v3, v4, v5}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1567
-    const/4 v2, 0x0
-
-    .line 1568
-    .local v2, "totalStats":Landroid/net/NetworkStats;
     const/4 v1, 0x0
 
-    .line 1570
+    .line 1569
     .local v1, "ipaTetherStats":Landroid/net/NetworkStats;
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/NetworkManagementService;->getHardwareTetherStats()Landroid/net/NetworkStats;
@@ -5649,7 +5645,7 @@
 
     move-result-object v1
 
-    .line 1574
+    .line 1573
     :goto_0
     :try_start_1
     iget-object v3, p0, Lcom/android/server/NetworkManagementService;->mStatsFactory:Lcom/android/internal/net/NetworkStatsFactory;
@@ -5658,41 +5654,21 @@
 
     move-result-object v2
 
-    .line 1575
+    .line 1574
+    .local v2, "totalStats":Landroid/net/NetworkStats;
     if-eqz v1, :cond_0
 
+    .line 1575
     invoke-virtual {v2, v1}, Landroid/net/NetworkStats;->combineAllValues(Landroid/net/NetworkStats;)V
-
-    .line 1576
-    :cond_0
-    const-string v3, "NetworkManagementService"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "getNetworkStatsSummaryDev:"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 1577
+    :cond_0
     return-object v2
 
     .line 1578
+    .end local v2    # "totalStats":Landroid/net/NetworkStats;
     :catch_0
     move-exception v0
 
@@ -5704,7 +5680,7 @@
 
     throw v3
 
-    .line 1571
+    .line 1570
     .end local v0    # "e":Ljava/io/IOException;
     :catch_1
     move-exception v3
@@ -5726,13 +5702,9 @@
     invoke-virtual {v3, v4, v5}, Landroid/content/Context;->enforceCallingOrSelfPermission(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 1586
-    const/4 v2, 0x0
-
-    .line 1587
-    .local v2, "totalStats":Landroid/net/NetworkStats;
     const/4 v1, 0x0
 
-    .line 1589
+    .line 1588
     .local v1, "ipaTetherStats":Landroid/net/NetworkStats;
     :try_start_0
     invoke-direct {p0}, Lcom/android/server/NetworkManagementService;->getHardwareTetherStats()Landroid/net/NetworkStats;
@@ -5741,7 +5713,7 @@
 
     move-result-object v1
 
-    .line 1593
+    .line 1592
     :goto_0
     :try_start_1
     iget-object v3, p0, Lcom/android/server/NetworkManagementService;->mStatsFactory:Lcom/android/internal/net/NetworkStatsFactory;
@@ -5750,41 +5722,21 @@
 
     move-result-object v2
 
-    .line 1594
+    .line 1593
+    .local v2, "totalStats":Landroid/net/NetworkStats;
     if-eqz v1, :cond_0
 
+    .line 1594
     invoke-virtual {v2, v1}, Landroid/net/NetworkStats;->combineAllValues(Landroid/net/NetworkStats;)V
-
-    .line 1595
-    :cond_0
-    const-string v3, "NetworkManagementService"
-
-    new-instance v4, Ljava/lang/StringBuilder;
-
-    invoke-direct {v4}, Ljava/lang/StringBuilder;-><init>()V
-
-    const-string v5, "getNetworkStatsSummaryXt:"
-
-    invoke-virtual {v4, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
-
-    move-result-object v4
-
-    invoke-virtual {v4}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
-
-    move-result-object v4
-
-    invoke-static {v3, v4}, Landroid/util/Slog;->d(Ljava/lang/String;Ljava/lang/String;)I
     :try_end_1
     .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
 
     .line 1596
+    :cond_0
     return-object v2
 
     .line 1597
+    .end local v2    # "totalStats":Landroid/net/NetworkStats;
     :catch_0
     move-exception v0
 
@@ -5796,7 +5748,7 @@
 
     throw v3
 
-    .line 1590
+    .line 1589
     .end local v0    # "e":Ljava/io/IOException;
     :catch_1
     move-exception v3

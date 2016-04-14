@@ -2610,7 +2610,7 @@
     .param p1, "state"    # Lcom/android/server/twilight/TwilightState;
 
     .prologue
-    const v9, 0x10400cd
+    const v9, 0x10400cf
 
     const/4 v6, 0x0
 
@@ -2708,7 +2708,7 @@
 
     move-result-object v7
 
-    const v8, 0x10400c2
+    const v8, 0x10400c4
 
     invoke-virtual {v7, v8}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -3224,7 +3224,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e008c
+    const v2, 0x10e008d
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -3239,7 +3239,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e008d
+    const v2, 0x10e008e
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -3254,7 +3254,7 @@
 
     move-result-object v1
 
-    const v2, 0x10e008e
+    const v2, 0x10e008f
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getInteger(I)I
 

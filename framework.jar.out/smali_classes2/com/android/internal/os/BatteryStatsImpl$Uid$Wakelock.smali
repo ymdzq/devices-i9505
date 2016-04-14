@@ -265,7 +265,6 @@
 
 .method public bridge synthetic getWakeTime(I)Landroid/os/BatteryStats$Timer;
     .locals 1
-    .param p1, "x0"    # I
 
     .prologue
     .line 5215

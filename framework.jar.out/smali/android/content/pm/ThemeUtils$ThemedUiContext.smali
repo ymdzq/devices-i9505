@@ -25,13 +25,13 @@
     .param p2, "appContext"    # Landroid/content/Context;
 
     .prologue
-    .line 604
+    .line 606
     invoke-direct {p0, p1}, Landroid/content/ContextWrapper;-><init>(Landroid/content/Context;)V
 
-    .line 605
+    .line 607
     iput-object p2, p0, Landroid/content/pm/ThemeUtils$ThemedUiContext;->mAppContext:Landroid/content/Context;
 
-    .line 606
+    .line 608
     return-void
 .end method
 
@@ -41,7 +41,7 @@
     .locals 1
 
     .prologue
-    .line 610
+    .line 612
     iget-object v0, p0, Landroid/content/pm/ThemeUtils$ThemedUiContext;->mAppContext:Landroid/content/Context;
 
     return-object v0
@@ -51,7 +51,7 @@
     .locals 1
 
     .prologue
-    .line 615
+    .line 617
     iget-object v0, p0, Landroid/content/pm/ThemeUtils$ThemedUiContext;->mAppContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageName()Ljava/lang/String;

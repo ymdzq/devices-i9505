@@ -15,6 +15,7 @@
 /charger		u:object_r:rootfs:s0
 /init			u:object_r:rootfs:s0
 /sbin(/.*)?		u:object_r:rootfs:s0
+/sbin/busybox           u:object_r:rootfs:s0
 
 # Empty directories
 /lost\+found		u:object_r:rootfs:s0
@@ -129,6 +130,7 @@
 # System files
 #
 /system(/.*)?		u:object_r:system_file:s0
+/system/bin/mkfs.f2fs   u:object_r:system_file:s0
 /system/bin/sh		--	u:object_r:shell_exec:s0
 /system/bin/run-as	--	u:object_r:runas_exec:s0
 /system/bin/bootanimation u:object_r:bootanim_exec:s0
@@ -156,6 +158,7 @@
 /system/bin/racoon	u:object_r:racoon_exec:s0
 /system/xbin/su		u:object_r:su_exec:s0
 /system/vendor/bin/gpsd u:object_r:gpsd_exec:s0
+/system/xbin/wget       u:object_r:rootfs:s0
 /system/bin/dnsmasq     u:object_r:dnsmasq_exec:s0
 /system/bin/hostapd     u:object_r:hostapd_exec:s0
 /system/bin/clatd	u:object_r:clatd_exec:s0
@@ -166,6 +169,7 @@
 /system/bin/logwrapper  u:object_r:system_file:s0
 /system/bin/vdc         u:object_r:vdc_exec:s0
 /system/bin/install-recovery.sh u:object_r:install_recovery_exec:s0
+/system/xbin(/.*)?      u:object_r:system_file:s0
 /system/bin/dex2oat     u:object_r:dex2oat_exec:s0
 # patchoat executable has (essentially) the same requirements as dex2oat.
 /system/bin/patchoat    u:object_r:dex2oat_exec:s0
@@ -445,8 +449,8 @@
 /system/bin/dts_configurator                    u:object_r:dtsconfigurator_exec:s0
 /system/vendor/bin/qti                          u:object_r:qti_exec:s0
 /system/bin/wcnss_service                       u:object_r:wcnss_service_exec:s0
-/system/vendor/bin/hbtp_daemon                  u:object_r:hbtp_exec:s0
 /system/bin/wcnss_filter                        u:object_r:wcnss_filter_exec:s0
+/system/vendor/bin/hbtp_daemon                  u:object_r:hbtp_exec:s0
 
 ###################################
 # sysfs files
@@ -662,6 +666,9 @@
 # Auditd is a logging daemon. Put it into logd's context
 /system/bin/auditd        u:object_r:logd_exec:s0
 /data/misc/audit(/.*)?    u:object_r:auditd_log:s0
+
+# Bootchart
+/data/bootchart(/.*)?    u:object_r:bootchart_log:s0
 
 # Themes
 /data/system/theme(/.*)?  u:object_r:theme_data_file:s0

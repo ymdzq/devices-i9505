@@ -410,6 +410,12 @@
     .end annotation
 .end field
 
+.field public static final NETWORK_TRAFFIC_AUTOHIDE:Ljava/lang/String; = "network_traffic_autohide"
+
+.field public static final NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD:Ljava/lang/String; = "network_traffic_autohide_threshold"
+
+.field public static final NETWORK_TRAFFIC_STATE:Ljava/lang/String; = "network_traffic_state"
+
 .field public static final NEXT_ALARM_FORMATTED:Ljava/lang/String; = "next_alarm_formatted"
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
@@ -421,10 +427,6 @@
     .annotation runtime Ljava/lang/Deprecated;
     .end annotation
 .end field
-
-.field public static final NOTIFICATION_LIGHT_BRIGHTNESS_LEVEL:Ljava/lang/String; = "notification_light_brightness_level"
-
-.field public static final NOTIFICATION_LIGHT_MULTIPLE_LEDS_ENABLE:Ljava/lang/String; = "notification_light_multiple_leds_enable"
 
 .field public static final NOTIFICATION_LIGHT_PULSE:Ljava/lang/String; = "notification_light_pulse"
 
@@ -493,6 +495,9 @@
 .field public static final PROXIMITY_ON_WAKE:Ljava/lang/String; = "proximity_on_wake"
 
 .field public static final QS_QUICK_PULLDOWN:Ljava/lang/String; = "qs_quick_pulldown"
+    .annotation runtime Ljava/lang/Deprecated;
+    .end annotation
+.end field
 
 .field public static final QS_SHOW_BRIGHTNESS_SLIDER:Ljava/lang/String; = "qs_show_brightness_slider"
     .annotation runtime Ljava/lang/Deprecated;
@@ -1547,7 +1552,7 @@
 
     invoke-virtual {v4, v5}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
-    .line 2443
+    .line 2445
     const/4 v4, 0x7
 
     new-array v4, v4, [Ljava/lang/String;
@@ -1586,7 +1591,7 @@
 
     sput-object v4, Landroid/provider/Settings$System;->VOLUME_SETTINGS:[Ljava/lang/String;
 
-    .line 2506
+    .line 2508
     const-string/jumbo v4, "ringtone"
 
     invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1595,7 +1600,7 @@
 
     sput-object v4, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_URI:Landroid/net/Uri;
 
-    .line 2518
+    .line 2520
     const-string/jumbo v4, "ringtone_2"
 
     invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1604,7 +1609,7 @@
 
     sput-object v4, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_URI_2:Landroid/net/Uri;
 
-    .line 2530
+    .line 2532
     const-string/jumbo v4, "ringtone_3"
 
     invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1613,7 +1618,7 @@
 
     sput-object v4, Landroid/provider/Settings$System;->DEFAULT_RINGTONE_URI_3:Landroid/net/Uri;
 
-    .line 2561
+    .line 2563
     const-string/jumbo v4, "notification_sound"
 
     invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1622,7 +1627,7 @@
 
     sput-object v4, Landroid/provider/Settings$System;->DEFAULT_NOTIFICATION_URI:Landroid/net/Uri;
 
-    .line 2577
+    .line 2579
     const-string v4, "alarm_alert"
 
     invoke-static {v4}, Landroid/provider/Settings$System;->getUriFor(Ljava/lang/String;)Landroid/net/Uri;
@@ -1631,8 +1636,8 @@
 
     sput-object v4, Landroid/provider/Settings$System;->DEFAULT_ALARM_ALERT_URI:Landroid/net/Uri;
 
-    .line 3580
-    const/16 v4, 0x4e
+    .line 3590
+    const/16 v4, 0x4c
 
     new-array v4, v4, [Ljava/lang/String;
 
@@ -2078,25 +2083,13 @@
 
     const/16 v5, 0x4b
 
-    const-string/jumbo v6, "notification_light_brightness_level"
-
-    aput-object v6, v4, v5
-
-    const/16 v5, 0x4c
-
-    const-string/jumbo v6, "notification_light_multiple_leds_enable"
-
-    aput-object v6, v4, v5
-
-    const/16 v5, 0x4d
-
     const-string/jumbo v6, "notification_light_screen_on_enable"
 
     aput-object v6, v4, v5
 
     sput-object v4, Landroid/provider/Settings$System;->SETTINGS_TO_BACKUP:[Ljava/lang/String;
 
-    .line 3666
+    .line 3674
     const/4 v4, 0x5
 
     new-array v4, v4, [Ljava/lang/String;

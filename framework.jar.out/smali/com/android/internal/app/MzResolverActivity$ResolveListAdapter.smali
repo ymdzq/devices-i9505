@@ -3043,7 +3043,8 @@
     .param p2, "position"    # I
 
     .prologue
-    const v0, #android:id@icon#t
+    .line 1273
+    const v0, 0x1020006
 
     invoke-virtual {p1, v0}, Landroid/view/View;->findViewById(I)Landroid/view/View;
 

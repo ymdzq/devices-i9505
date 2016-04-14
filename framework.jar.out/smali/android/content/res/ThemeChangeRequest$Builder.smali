@@ -49,29 +49,29 @@
     .locals 1
 
     .prologue
-    .line 184
+    .line 188
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 179
+    .line 183
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mThemeComponents:Ljava/util/Map;
 
-    .line 180
+    .line 184
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mPerAppOverlays:Ljava/util/Map;
 
-    .line 181
+    .line 185
     sget-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->USER_REQUEST:Landroid/content/res/ThemeChangeRequest$RequestType;
 
     iput-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 184
+    .line 188
     return-void
 .end method
 
@@ -80,35 +80,35 @@
     .param p1, "themeConfig"    # Landroid/content/res/ThemeConfig;
 
     .prologue
-    .line 186
+    .line 190
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 179
+    .line 183
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mThemeComponents:Ljava/util/Map;
 
-    .line 180
+    .line 184
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
     iput-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mPerAppOverlays:Ljava/util/Map;
 
-    .line 181
+    .line 185
     sget-object v0, Landroid/content/res/ThemeChangeRequest$RequestType;->USER_REQUEST:Landroid/content/res/ThemeChangeRequest$RequestType;
 
     iput-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 187
+    .line 191
     if-eqz p1, :cond_0
 
-    .line 188
+    .line 192
     invoke-direct {p0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->buildChangeRequestFromThemeConfig(Landroid/content/res/ThemeConfig;)V
 
-    .line 190
+    .line 194
     :cond_0
     return-void
 .end method
@@ -118,21 +118,21 @@
     .param p1, "themeConfig"    # Landroid/content/res/ThemeConfig;
 
     .prologue
-    .line 274
+    .line 282
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getFontPkgName()Ljava/lang/String;
 
     move-result-object v3
 
     if-eqz v3, :cond_0
 
-    .line 275
+    .line 283
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getFontPkgName()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {p0, v3}, Landroid/content/res/ThemeChangeRequest$Builder;->setFont(Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
 
-    .line 277
+    .line 285
     :cond_0
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getIconPackPkgName()Ljava/lang/String;
 
@@ -140,14 +140,14 @@
 
     if-eqz v3, :cond_1
 
-    .line 278
+    .line 286
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getIconPackPkgName()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {p0, v3}, Landroid/content/res/ThemeChangeRequest$Builder;->setIcons(Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
 
-    .line 280
+    .line 288
     :cond_1
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getOverlayPkgName()Ljava/lang/String;
 
@@ -155,14 +155,14 @@
 
     if-eqz v3, :cond_2
 
-    .line 281
+    .line 289
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getOverlayPkgName()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {p0, v3}, Landroid/content/res/ThemeChangeRequest$Builder;->setOverlay(Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
 
-    .line 283
+    .line 291
     :cond_2
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getOverlayForStatusBar()Ljava/lang/String;
 
@@ -170,14 +170,14 @@
 
     if-eqz v3, :cond_3
 
-    .line 284
+    .line 292
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getOverlayForStatusBar()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {p0, v3}, Landroid/content/res/ThemeChangeRequest$Builder;->setStatusBar(Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
 
-    .line 286
+    .line 294
     :cond_3
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getOverlayForNavBar()Ljava/lang/String;
 
@@ -185,20 +185,20 @@
 
     if-eqz v3, :cond_4
 
-    .line 287
+    .line 295
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getOverlayForNavBar()Ljava/lang/String;
 
     move-result-object v3
 
     invoke-virtual {p0, v3}, Landroid/content/res/ThemeChangeRequest$Builder;->setNavBar(Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
 
-    .line 291
+    .line 299
     :cond_4
     invoke-virtual {p1}, Landroid/content/res/ThemeConfig;->getAppThemes()Ljava/util/Map;
 
     move-result-object v2
 
-    .line 292
+    .line 300
     .local v2, "themes":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Landroid/content/res/ThemeConfig$AppTheme;>;"
     invoke-interface {v2}, Ljava/util/Map;->keySet()Ljava/util/Set;
 
@@ -223,7 +223,7 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 293
+    .line 301
     .local v0, "appPkgName":Ljava/lang/String;
     invoke-static {v0}, Landroid/content/pm/ThemeUtils;->isPerAppThemeComponent(Ljava/lang/String;)Z
 
@@ -231,7 +231,7 @@
 
     if-eqz v3, :cond_5
 
-    .line 294
+    .line 302
     invoke-interface {v2, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
     move-result-object v3
@@ -246,7 +246,7 @@
 
     goto :goto_0
 
-    .line 297
+    .line 305
     .end local v0    # "appPkgName":Ljava/lang/String;
     :cond_6
     return-void
@@ -258,7 +258,7 @@
     .locals 7
 
     .prologue
-    .line 269
+    .line 277
     new-instance v0, Landroid/content/res/ThemeChangeRequest;
 
     iget-object v1, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mThemeComponents:Ljava/util/Map;
@@ -281,7 +281,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 231
+    .line 235
     const-string/jumbo v0, "mods_alarms"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -297,23 +297,23 @@
     .param p2, "themePkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 252
+    .line 260
     if-eqz p1, :cond_0
 
-    .line 253
+    .line 261
     if-eqz p2, :cond_1
 
-    .line 254
+    .line 262
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mPerAppOverlays:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 260
+    .line 268
     :cond_0
     :goto_0
     return-object p0
 
-    .line 256
+    .line 264
     :cond_1
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mPerAppOverlays:Ljava/util/Map;
 
@@ -327,7 +327,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 213
+    .line 217
     const-string/jumbo v0, "mods_bootanim"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -343,19 +343,19 @@
     .param p2, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 243
+    .line 251
     if-eqz p2, :cond_0
 
-    .line 244
+    .line 252
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v0, p1, p2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 248
+    .line 256
     :goto_0
     return-object p0
 
-    .line 246
+    .line 254
     :cond_0
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mThemeComponents:Ljava/util/Map;
 
@@ -369,7 +369,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 205
+    .line 209
     const-string/jumbo v0, "mods_fonts"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -384,8 +384,23 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 209
+    .line 213
     const-string/jumbo v0, "mods_icons"
+
+    invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public setLiveLockScreen(Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
+    .locals 1
+    .param p1, "pkgName"    # Ljava/lang/String;
+
+    .prologue
+    .line 247
+    const-string/jumbo v0, "mods_live_lock_screen"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
 
@@ -399,7 +414,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 227
+    .line 231
     const-string/jumbo v0, "mods_lockscreen"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -414,7 +429,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 201
+    .line 205
     const-string/jumbo v0, "mods_navigation_bar"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -429,7 +444,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 235
+    .line 239
     const-string/jumbo v0, "mods_notifications"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -444,7 +459,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 193
+    .line 197
     const-string/jumbo v0, "mods_overlays"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -459,17 +474,17 @@
     .param p1, "requestType"    # Landroid/content/res/ThemeChangeRequest$RequestType;
 
     .prologue
-    .line 264
+    .line 272
     if-eqz p1, :cond_0
 
     .end local p1    # "requestType":Landroid/content/res/ThemeChangeRequest$RequestType;
     :goto_0
     iput-object p1, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 265
+    .line 273
     return-object p0
 
-    .line 264
+    .line 272
     .restart local p1    # "requestType":Landroid/content/res/ThemeChangeRequest$RequestType;
     :cond_0
     sget-object p1, Landroid/content/res/ThemeChangeRequest$RequestType;->USER_REQUEST:Landroid/content/res/ThemeChangeRequest$RequestType;
@@ -482,7 +497,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 239
+    .line 243
     const-string/jumbo v0, "mods_ringtones"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -497,7 +512,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 197
+    .line 201
     const-string/jumbo v0, "mods_status_bar"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -512,7 +527,7 @@
     .param p1, "pkgName"    # Ljava/lang/String;
 
     .prologue
-    .line 217
+    .line 221
     const-string/jumbo v0, "mods_homescreen"
 
     invoke-virtual {p0, v0, p1}, Landroid/content/res/ThemeChangeRequest$Builder;->setComponent(Ljava/lang/String;Ljava/lang/String;)Landroid/content/res/ThemeChangeRequest$Builder;
@@ -527,9 +542,9 @@
     .param p1, "id"    # J
 
     .prologue
-    .line 222
+    .line 226
     iput-wide p1, p0, Landroid/content/res/ThemeChangeRequest$Builder;->mWallpaperId:J
 
-    .line 223
+    .line 227
     return-object p0
 .end method

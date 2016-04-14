@@ -593,7 +593,7 @@
 
     .line 259
     .local v0, "res":Landroid/content/res/Resources;
-    const v2, 0x104046d
+    const v2, 0x104046f
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -602,7 +602,7 @@
     iput-object v2, p0, Landroid/widget/MediaController;->mPlayDescription:Ljava/lang/CharSequence;
 
     .line 261
-    const v2, 0x104046c
+    const v2, 0x104046e
 
     invoke-virtual {v0, v2}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

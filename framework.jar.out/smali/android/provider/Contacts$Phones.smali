@@ -4,8 +4,8 @@
 
 # interfaces
 .implements Landroid/provider/BaseColumns;
-.implements Landroid/provider/Contacts$PeopleColumns;
 .implements Landroid/provider/Contacts$PhonesColumns;
+.implements Landroid/provider/Contacts$PeopleColumns;
 
 
 # annotations
@@ -153,7 +153,7 @@
 
     move-result-object v3
 
-    const v4, #android:array@phoneTypes#t
+    const v4, 0x1070003
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getTextArray(I)[Ljava/lang/CharSequence;
 

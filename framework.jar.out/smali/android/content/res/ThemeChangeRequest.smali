@@ -65,7 +65,7 @@
     .locals 1
 
     .prologue
-    .line 157
+    .line 161
     new-instance v0, Landroid/content/res/ThemeChangeRequest$1;
 
     invoke-direct {v0}, Landroid/content/res/ThemeChangeRequest$1;-><init>()V
@@ -80,7 +80,7 @@
     .param p1, "source"    # Landroid/os/Parcel;
 
     .prologue
-    .line 122
+    .line 126
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 33
@@ -102,12 +102,12 @@
 
     iput-wide v2, p0, Landroid/content/res/ThemeChangeRequest;->mWallpaperId:J
 
-    .line 123
+    .line 127
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 124
+    .line 128
     .local v1, "numComponents":I
     const/4 v0, 0x0
 
@@ -115,7 +115,7 @@
     :goto_0
     if-ge v0, v1, :cond_0
 
-    .line 125
+    .line 129
     iget-object v2, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -128,24 +128,24 @@
 
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 124
+    .line 128
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 128
+    .line 132
     :cond_0
     invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
 
     move-result v1
 
-    .line 129
+    .line 133
     const/4 v0, 0x0
 
     :goto_1
     if-ge v0, v1, :cond_1
 
-    .line 130
+    .line 134
     iget-object v2, p0, Landroid/content/res/ThemeChangeRequest;->mPerAppOverlays:Ljava/util/Map;
 
     invoke-virtual {p1}, Landroid/os/Parcel;->readString()Ljava/lang/String;
@@ -158,12 +158,12 @@
 
     invoke-interface {v2, v3, v4}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 129
+    .line 133
     add-int/lit8 v0, v0, 0x1
 
     goto :goto_1
 
-    .line 132
+    .line 136
     :cond_1
     invoke-static {}, Landroid/content/res/ThemeChangeRequest$RequestType;->values()[Landroid/content/res/ThemeChangeRequest$RequestType;
 
@@ -177,14 +177,14 @@
 
     iput-object v2, p0, Landroid/content/res/ThemeChangeRequest;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 133
+    .line 137
     invoke-virtual {p1}, Landroid/os/Parcel;->readLong()J
 
     move-result-wide v2
 
     iput-wide v2, p0, Landroid/content/res/ThemeChangeRequest;->mWallpaperId:J
 
-    .line 134
+    .line 138
     return-void
 .end method
 
@@ -223,7 +223,7 @@
     .end annotation
 
     .prologue
-    .line 111
+    .line 115
     .local p1, "components":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     .local p2, "perAppThemes":Ljava/util/Map;, "Ljava/util/Map<Ljava/lang/String;Ljava/lang/String;>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
@@ -247,31 +247,31 @@
 
     iput-wide v0, p0, Landroid/content/res/ThemeChangeRequest;->mWallpaperId:J
 
-    .line 112
+    .line 116
     if-eqz p1, :cond_0
 
-    .line 113
+    .line 117
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 115
+    .line 119
     :cond_0
     if-eqz p2, :cond_1
 
-    .line 116
+    .line 120
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mPerAppOverlays:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->putAll(Ljava/util/Map;)V
 
-    .line 118
+    .line 122
     :cond_1
     iput-object p3, p0, Landroid/content/res/ThemeChangeRequest;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
 
-    .line 119
+    .line 123
     iput-wide p4, p0, Landroid/content/res/ThemeChangeRequest;->mWallpaperId:J
 
-    .line 120
+    .line 124
     return-void
 .end method
 
@@ -295,7 +295,7 @@
     .param p1, "componentName"    # Ljava/lang/String;
 
     .prologue
-    .line 107
+    .line 111
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -313,7 +313,7 @@
     .locals 1
 
     .prologue
-    .line 138
+    .line 142
     const/4 v0, 0x0
 
     return v0
@@ -375,6 +375,20 @@
     return-object v0
 .end method
 
+.method public getLiveLockScreenThemePackageName()Ljava/lang/String;
+    .locals 1
+
+    .prologue
+    .line 83
+    const-string/jumbo v0, "mods_live_lock_screen"
+
+    invoke-direct {p0, v0}, Landroid/content/res/ThemeChangeRequest;->getThemePackageNameForComponent(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
 .method public getLockWallpaperThemePackageName()Ljava/lang/String;
     .locals 1
 
@@ -421,7 +435,7 @@
     .locals 2
 
     .prologue
-    .line 99
+    .line 103
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
@@ -467,7 +481,7 @@
     .end annotation
 
     .prologue
-    .line 95
+    .line 99
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mPerAppOverlays:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
@@ -481,7 +495,7 @@
     .locals 1
 
     .prologue
-    .line 103
+    .line 107
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
 
     return-object v0
@@ -529,7 +543,7 @@
     .end annotation
 
     .prologue
-    .line 83
+    .line 87
     iget-object v0, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-static {v0}, Ljava/util/Collections;->unmodifiableMap(Ljava/util/Map;)Ljava/util/Map;
@@ -543,7 +557,7 @@
     .locals 2
 
     .prologue
-    .line 87
+    .line 91
     iget-wide v0, p0, Landroid/content/res/ThemeChangeRequest;->mWallpaperId:J
 
     return-wide v0
@@ -569,7 +583,7 @@
     .param p2, "flags"    # I
 
     .prologue
-    .line 143
+    .line 147
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->size()I
@@ -578,7 +592,7 @@
 
     invoke-virtual {p1, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 144
+    .line 148
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -603,11 +617,11 @@
 
     check-cast v1, Ljava/lang/String;
 
-    .line 145
+    .line 149
     .local v1, "component":Ljava/lang/String;
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 146
+    .line 150
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mThemeComponents:Ljava/util/Map;
 
     invoke-interface {v3, v1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -620,7 +634,7 @@
 
     goto :goto_0
 
-    .line 148
+    .line 152
     .end local v1    # "component":Ljava/lang/String;
     :cond_0
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mPerAppOverlays:Ljava/util/Map;
@@ -631,7 +645,7 @@
 
     invoke-virtual {p1, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 149
+    .line 153
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mPerAppOverlays:Ljava/util/Map;
 
     invoke-interface {v3}, Ljava/util/Map;->keySet()Ljava/util/Set;
@@ -655,11 +669,11 @@
 
     check-cast v0, Ljava/lang/String;
 
-    .line 150
+    .line 154
     .local v0, "appPkgName":Ljava/lang/String;
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    .line 151
+    .line 155
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mPerAppOverlays:Ljava/util/Map;
 
     invoke-interface {v3, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -672,7 +686,7 @@
 
     goto :goto_1
 
-    .line 153
+    .line 157
     .end local v0    # "appPkgName":Ljava/lang/String;
     :cond_1
     iget-object v3, p0, Landroid/content/res/ThemeChangeRequest;->mRequestType:Landroid/content/res/ThemeChangeRequest$RequestType;
@@ -683,11 +697,11 @@
 
     invoke-virtual {p1, v3}, Landroid/os/Parcel;->writeInt(I)V
 
-    .line 154
+    .line 158
     iget-wide v4, p0, Landroid/content/res/ThemeChangeRequest;->mWallpaperId:J
 
     invoke-virtual {p1, v4, v5}, Landroid/os/Parcel;->writeLong(J)V
 
-    .line 155
+    .line 159
     return-void
 .end method
