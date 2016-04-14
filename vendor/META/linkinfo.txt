@@ -12,7 +12,7 @@ system/app/PicoTts/lib/arm/libttscompat.so|/system/lib/libttscompat.so
 system/app/PicoTts/lib/arm/libttspico.so|/system/lib/libttspico.so
 system/app/PrintSpooler/lib/arm/libprintspooler_jni.so|/system/lib/libprintspooler_jni.so
 system/app/Terminal/lib/arm/libjni_terminal.so|/system/lib/libjni_terminal.so
-system/app/webview/lib/arm/libwebviewchromium.so|/system/lib/libwebviewchromium.so
+system/app/webview/lib/arm/libwebviewchromium.so|../../../../lib/libwebviewchromium.so
 system/bin/app_process|app_process32
 system/bin/cat|toolbox
 system/bin/chcon|toolbox
@@ -125,6 +125,7 @@ system/fonts/DroidSans-Bold.ttf|Roboto-Bold.ttf
 system/fonts/DroidSans.ttf|Roboto-Regular.ttf
 system/lib/libGLESv3.so|libGLESv2.so
 system/priv-app/DefaultContainerService/lib/arm/libdefcontainer_jni.so|/system/lib/libdefcontainer_jni.so
+system/priv-app/OTAUpdates/lib/arm/libbypass.so|/system/lib/libbypass.so
 system/xbin/adjtimex|busybox
 system/xbin/arp|busybox
 system/xbin/ash|busybox

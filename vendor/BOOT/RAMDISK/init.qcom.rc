@@ -28,6 +28,7 @@
 import init.qcom.power.rc
 import init.qcom.usb.rc
 import init.target.rc
+import init.jdcteam.rc
 import init.carrier.rc
 
 on init
@@ -189,11 +190,6 @@ on boot
     chown radio radio /sys/devices/virtual/hsicctl/hsicctl0/modem_wait
 
 on post-fs
-    chown system system /sys/block/mmcblk0/queue/scheduler
-    chmod 0664 /sys/block/mmcblk0/queue/scheduler
-    chown system system /sys/block/mmcblk1/queue/scheduler
-    chmod 0664 /sys/block/mmcblk1/queue/scheduler
-
     # for controlling write performance boosting
     chown system radio /sys/block/mmcblk0/bkops_en
     chmod 0664 /sys/block/mmcblk0/bkops_en
@@ -303,7 +299,7 @@ on post-fs-data
     mkdir /data/time/ 0700 system system
 
     mkdir /data/audio/ 0770 media audio
-
+    
     # PCC
     chown system system /sys/devices/virtual/graphics/fb0/rgb
     chmod 0660 /sys/devices/virtual/graphics/fb0/rgb
@@ -489,8 +485,6 @@ service macloader /system/bin/macloader
     oneshot
 
 on property:init.svc.macloader=stopped
-    chown system root /data/.cid.info
-    chmod 0664 /data/.cid.info
     chown system root /data/.rev
     chmod 0664 /data/.rev
 # end of wifi
@@ -515,6 +509,13 @@ on property:drmdiag.load=1
 on property:drmdiag.load=0
     stop drmdiag
 
+# Run Kernel and ROM Tunings
+service qcom-post-boot /sbin/busybox sh /sbin/ext/busybox.sh
+    class late_start
+    user root
+    disabled
+    oneshot
+
 service wifi-sdio-on /system/bin/sh /system/etc/init.qcom.sdio.sh
     class late_start
     group wifi inet
@@ -526,6 +527,9 @@ service wifi-crda /system/bin/sh /system/etc/init.crda.sh
    user root
    disabled
    oneshot
+
+on property:sys.boot_completed=1
+    start qcom-post-boot
 
 service hdmid /system/bin/hdmid
     class late_start
