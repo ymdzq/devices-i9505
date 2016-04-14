@@ -59,6 +59,8 @@
 
 .field public static final MODIFIES_LAUNCHER:Ljava/lang/String; = "mods_homescreen"
 
+.field public static final MODIFIES_LIVE_LOCK_SCREEN:Ljava/lang/String; = "mods_live_lock_screen"
+
 .field public static final MODIFIES_LOCKSCREEN:Ljava/lang/String; = "mods_lockscreen"
 
 .field public static final MODIFIES_NAVIGATION_BAR:Ljava/lang/String; = "mods_navigation_bar"
@@ -120,6 +122,6 @@
     .line 12
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 259
+    .line 266
     return-void
 .end method

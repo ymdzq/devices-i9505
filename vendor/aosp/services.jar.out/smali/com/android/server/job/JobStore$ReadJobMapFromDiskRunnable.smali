@@ -395,7 +395,7 @@
 .end method
 
 .method private readJobMapImpl(Ljava/io/FileInputStream;)Ljava/util/List;
-    .locals 12
+    .locals 13
     .param p1, "fis"    # Ljava/io/FileInputStream;
     .annotation system Ldalvik/annotation/Signature;
         value = {
@@ -417,9 +417,9 @@
     .end annotation
 
     .prologue
-    const/4 v11, 0x2
+    const/4 v12, 0x2
 
-    const/4 v10, 0x1
+    const/4 v11, 0x1
 
     const/4 v7, 0x0
 
@@ -440,9 +440,9 @@
     .line 456
     .local v1, "eventType":I
     :goto_0
-    if-eq v1, v11, :cond_0
+    if-eq v1, v12, :cond_0
 
-    if-eq v1, v10, :cond_0
+    if-eq v1, v11, :cond_0
 
     .line 458
     invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
@@ -452,7 +452,25 @@
     .line 459
     const-string v8, "JobStore"
 
+    new-instance v9, Ljava/lang/StringBuilder;
+
+    invoke-direct {v9}, Ljava/lang/StringBuilder;-><init>()V
+
+    const-string v10, "Start tag: "
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
     invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
+
+    move-result-object v10
+
+    invoke-virtual {v9, v10}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v9
+
+    invoke-virtual {v9}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
 
     move-result-object v9
 
@@ -462,7 +480,7 @@
 
     .line 461
     :cond_0
-    if-ne v1, v10, :cond_1
+    if-ne v1, v11, :cond_1
 
     move-object v2, v7
 
@@ -556,7 +574,7 @@
 
     .line 485
     :cond_3
-    if-ne v1, v11, :cond_4
+    if-ne v1, v12, :cond_4
 
     .line 486
     invoke-interface {v3}, Lorg/xmlpull/v1/XmlPullParser;->getName()Ljava/lang/String;
@@ -593,7 +611,7 @@
     move-result v1
 
     .line 501
-    if-ne v1, v10, :cond_3
+    if-ne v1, v11, :cond_3
 
     goto :goto_1
 

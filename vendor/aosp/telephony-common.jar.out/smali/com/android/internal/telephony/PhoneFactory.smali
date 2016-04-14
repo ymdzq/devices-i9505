@@ -1590,7 +1590,7 @@
 
     move-result-object v19
 
-    const v21, 0x11200a4
+    const v21, 0x11200a2
 
     move-object/from16 v0, v19
 

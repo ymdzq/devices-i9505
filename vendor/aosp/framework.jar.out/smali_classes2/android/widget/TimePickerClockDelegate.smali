@@ -242,7 +242,7 @@
 
     .line 126
     .local v17, "res":Landroid/content/res/Resources;
-    const v18, 0x1040750
+    const v18, 0x1040752
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -255,7 +255,7 @@
     iput-object v0, v1, Landroid/widget/TimePickerClockDelegate;->mSelectHours:Ljava/lang/String;
 
     .line 127
-    const v18, 0x1040751
+    const v18, 0x1040753
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -394,7 +394,7 @@
 
     new-instance v19, Landroid/widget/TimePickerClockDelegate$ClickActionDelegate;
 
-    const v20, 0x1040750
+    const v20, 0x1040752
 
     move-object/from16 v0, v19
 
@@ -472,7 +472,7 @@
 
     new-instance v19, Landroid/widget/TimePickerClockDelegate$ClickActionDelegate;
 
-    const v20, 0x1040751
+    const v20, 0x1040753
 
     move-object/from16 v0, v19
 
@@ -905,7 +905,7 @@
     iput-boolean v0, v1, Landroid/widget/TimePickerClockDelegate;->mAllowAutoAdvance:Z
 
     .line 204
-    const v18, 0x1040759
+    const v18, 0x104075b
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -918,7 +918,7 @@
     iput-object v0, v1, Landroid/widget/TimePickerClockDelegate;->mDoublePlaceholderText:Ljava/lang/String;
 
     .line 205
-    const v18, 0x1040757
+    const v18, 0x1040759
 
     invoke-virtual/range {v17 .. v18}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

@@ -47,6 +47,13 @@
 
     .prologue
     .line 227
+    # getter for: Lcom/android/server/power/ShutdownThread;->mRebootSafeMode:Z
+    invoke-static {}, Lcom/android/server/power/ShutdownThread;->access$000()Z
+
+    move-result v4
+
+    if-nez v4, :cond_1
+
     iget-boolean v4, p0, Lcom/android/server/power/ShutdownThread$1;->val$advancedReboot:Z
 
     if-eqz v4, :cond_1
@@ -100,7 +107,7 @@
     aget-object v4, v0, v2
 
     # setter for: Lcom/android/server/power/ShutdownThread;->mRebootReason:Ljava/lang/String;
-    invoke-static {v4}, Lcom/android/server/power/ShutdownThread;->access$002(Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v4}, Lcom/android/server/power/ShutdownThread;->access$102(Ljava/lang/String;)Ljava/lang/String;
 
     .line 236
     aget-object v4, v0, v2
@@ -115,7 +122,7 @@
 
     .line 237
     # invokes: Lcom/android/server/power/ShutdownThread;->doSoftReboot()V
-    invoke-static {}, Lcom/android/server/power/ShutdownThread;->access$100()V
+    invoke-static {}, Lcom/android/server/power/ShutdownThread;->access$200()V
 
     .line 246
     .end local v0    # "actions":[Ljava/lang/String;
@@ -133,7 +140,7 @@
     const/4 v4, 0x1
 
     # setter for: Lcom/android/server/power/ShutdownThread;->mReboot:Z
-    invoke-static {v4}, Lcom/android/server/power/ShutdownThread;->access$202(Z)Z
+    invoke-static {v4}, Lcom/android/server/power/ShutdownThread;->access$302(Z)Z
 
     .line 245
     .end local v1    # "reasonsList":Landroid/widget/ListView;
@@ -143,7 +150,7 @@
     iget-object v4, p0, Lcom/android/server/power/ShutdownThread$1;->val$context:Landroid/content/Context;
 
     # invokes: Lcom/android/server/power/ShutdownThread;->beginShutdownSequence(Landroid/content/Context;)V
-    invoke-static {v4}, Lcom/android/server/power/ShutdownThread;->access$300(Landroid/content/Context;)V
+    invoke-static {v4}, Lcom/android/server/power/ShutdownThread;->access$400(Landroid/content/Context;)V
 
     goto :goto_0
 .end method

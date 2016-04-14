@@ -314,7 +314,7 @@
     .line 2072
     iget-object v3, p0, Landroid/widget/Editor$EasyEditPopupWindow;->mDeleteTextView:Landroid/widget/TextView;
 
-    const v4, 0x104053c
+    const v4, 0x104053e
 
     invoke-virtual {v3, v4}, Landroid/widget/TextView;->setText(I)V
 

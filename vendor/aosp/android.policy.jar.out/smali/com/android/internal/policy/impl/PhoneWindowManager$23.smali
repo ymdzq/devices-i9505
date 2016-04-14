@@ -23,7 +23,7 @@
     .locals 0
 
     .prologue
-    .line 6027
+    .line 6029
     iput-object p1, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
@@ -43,12 +43,12 @@
 
     const/4 v5, 0x1
 
-    .line 6029
+    .line 6031
     invoke-virtual {p2}, Landroid/content/Intent;->getAction()Ljava/lang/String;
 
     move-result-object v0
 
-    .line 6030
+    .line 6032
     .local v0, "action":Ljava/lang/String;
     const-string v2, "org.codeaurora.intent.action.WIFI_DISPLAY_VIDEO"
 
@@ -58,23 +58,23 @@
 
     if-eqz v2, :cond_0
 
-    .line 6031
+    .line 6033
     const-string v2, "state"
 
     invoke-virtual {p2, v2, v3}, Landroid/content/Intent;->getIntExtra(Ljava/lang/String;I)I
 
     move-result v1
 
-    .line 6032
+    .line 6034
     .local v1, "state":I
     if-ne v1, v5, :cond_1
 
-    .line 6033
+    .line 6035
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     iput-boolean v5, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mWifiDisplayConnected:Z
 
-    .line 6037
+    .line 6039
     :goto_0
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
@@ -88,17 +88,17 @@
 
     iput v3, v2, Lcom/android/internal/policy/impl/PhoneWindowManager;->mWifiDisplayCustomRotation:I
 
-    .line 6039
+    .line 6041
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;
 
     invoke-virtual {v2, v5}, Lcom/android/internal/policy/impl/PhoneWindowManager;->updateRotation(Z)V
 
-    .line 6041
+    .line 6043
     .end local v1    # "state":I
     :cond_0
     return-void
 
-    .line 6035
+    .line 6037
     .restart local v1    # "state":I
     :cond_1
     iget-object v2, p0, Lcom/android/internal/policy/impl/PhoneWindowManager$23;->this$0:Lcom/android/internal/policy/impl/PhoneWindowManager;

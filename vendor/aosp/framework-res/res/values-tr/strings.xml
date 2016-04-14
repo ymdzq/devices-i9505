@@ -38,7 +38,7 @@
     <string name="permdesc_accessThemeService">Bir uygulamanın tema hizmetine erişimine izin verir. Normal uygulamalar için gerekli değildir.</string>
     <string name="permlab_readThemes">tema bilgisini oku</string>
     <string name="permdesc_readThemesDesc">Uygulamanın temalarınızı okumasına ve hangi temayı uyguladığınızı belirlemesine izin verir.</string>
-    <string name="permlab_writeThemes">temaları değiştir</string>
+    <string name="permlab_writeThemes">temalarınızı değiştirin</string>
     <string name="permdesc_writeThemesDesc">Uygulamanın yeni temalar eklemesine ve uyguladığınız temayı değiştirmesine izin verir.</string>
     <string name="permlab_readPhoneBlacklist">telefon kara listesini oku</string>
     <string name="permdesc_readPhoneBlacklist">Bir uygulamanın gelen çağrıları ya da mesajları engellenmiş telefon numaralarını okumasına izin verir.</string>
@@ -57,7 +57,7 @@
     <string name="reboot_reboot">Yeniden başlat</string>
     <string name="reboot_recovery">Kurtarma modu (Recovery)</string>
     <string name="reboot_bootloader">Ön yükleyici (Bootloader)</string>
-    <string name="reboot_download">İndirme Kipi</string>
+    <string name="reboot_download">İndir</string>
     <string name="reboot_soft">Yazılımsal yeniden başlatma</string>
     <string name="reboot_title">Yeniden Başlat</string>
     <string name="reboot_confirm">Telefonunuz yeniden başlatılacak.</string>
@@ -77,12 +77,12 @@
     <string name="app_ops_access_location">konuma erişim</string>
     <string name="app_ops_access_notifications">bildirimleri oku</string>
     <string name="app_ops_activate_vpn">"VPN'yi etkinleştir"</string>
-    <string name="app_ops_alarm_wakeup">cihazı uyku modundan al</string>
+    <string name="app_ops_alarm_wakeup">cihazı uyku modundan çıkar</string>
     <string name="app_ops_su">root erişimi al</string>
     <string name="app_ops_auto_start">açılışta başla</string>
     <string name="app_ops_delete_call_log">arama kaydını sil</string>
     <string name="app_ops_delete_contacts">kişileri sil</string>
-    <string name="app_ops_delete_mms">MMS mesajlarını sil</string>
+    <string name="app_ops_delete_mms">MMS mesajlarınızı silin</string>
     <string name="app_ops_delete_sms">"SMS'leri sil"</string>
     <string name="app_ops_draw_on_top">pencereleri üstte göster</string>
     <string name="app_ops_get_usage_stats">uyg. kullanım istatistiklerini al</string>
@@ -101,7 +101,7 @@
     <string name="app_ops_read_call_log">arama kaydını oku</string>
     <string name="app_ops_read_clipboard">panoyu oku</string>
     <string name="app_ops_read_contacts">kişileri oku</string>
-    <string name="app_ops_read_mms">MMS mesajları oku</string>
+    <string name="app_ops_read_mms">MMS mesajlarınızı okuyun</string>
     <string name="app_ops_read_sms">SMS mesajlarını oku</string>
     <string name="app_ops_receive_sms">SMS mesajı al</string>
     <string name="app_ops_record_audio">ses kaydet</string>
@@ -140,6 +140,8 @@
     <string name="perf_profile_pwrsv">Güç tasarrufu</string>
     <string name="perf_profile_bal">Dengeli</string>
     <string name="perf_profile_perf">Performans</string>
+    <string name="perf_profile_bias_power">Verimlilik</string>
+    <string name="perf_profile_bias_perf">Hızlı</string>
     <string name="theme_install_error_title">Tema yüklenemedi</string>
     <string name="theme_install_error_message">%s yüklenemedi</string>
     <string name="theme_reset_notification_title">Tema sıfırlandı</string>
@@ -151,8 +153,8 @@
     <string name="permdesc_accessTorchService">Bir uygulamanın fener hizmetine erişimine izin verir. Normal uygulamalar için gerekli değildir.</string>
     <string name="permlab_preventpower">güç tuşunun işlevini değiştir</string>
     <string name="permdesc_preventpower">Bir uygulamanın güç tuşunun işlevini değiştirmesine izin verir.</string>
-    <string name="usb_extmedia_format_message">USB bellek (%1$s) alanınızdaki tüm veri silinecek. Bu işlem geri alınamaz!</string>
-    <string name="sd_extmedia_format_message">Kartınızdaki (%1$s) tüm veri silinecek. Bu işlem geri alınamaz!</string>
+    <string name="usb_extmedia_format_message">"USB bellek alanınızdaki ('%1$s' dizini altında bulunan) tüm veriler silinecek. Bu işlem geri alınamaz!"</string>
+    <string name="sd_extmedia_format_message">"Kartınızdaki ('%1$s' dizini altında bulunan) tüm veriler silinecek. Bu işlem geri alınamaz!"</string>
     <string name="sd_progress_unmounting">SD kartın bağlantısı kesiliyor…</string>
     <string name="sd_progress_erasing">SD kart siliniyor…</string>
     <string name="sd_format_error">SD kart silinemedi.</string>
@@ -208,13 +210,15 @@
     <string name="storage_sd_dock_card">Ünite SD kartı</string>
     <string name="fingerprint_default_name">Parmak izi %d</string>
     <string name="permlab_accessFingerprintService">parmak izi hizmetine eriş</string>
-    <string name="permdesc_accessFingerprintService">Uygulamaların parmak izi hizmetine erişimini sağlar. Uygulama parmak izlerini ekleyebilir, silebilir, yeniden adlandırabilir ve yetkilendirebilir.</string>
+    <string name="permdesc_accessFingerprintService">Uygulamanın parmak izi hizmetine erişimini sağlar. Uygulama parmak izlerini ekleyebilir, silebilir, yeniden adlandırabilir ve yetkilendirebilir</string>
     <string name="permlab_resetBatteryStats">pil istatistiklerini sıfırla</string>
-    <string name="permdesc_resetBatteryStats">Uygulamalara güncel düşük seviye pil kullanım verisini sıfırlama izni verir.</string>
+    <string name="permdesc_resetBatteryStats">Uygulamaya güncel düşük seviye pil kullanım verisini sıfırlama izni verir.</string>
     <string name="silent_mode_priority">Öncelik</string>
     <string name="silent_mode_none">Yok</string>
     <string name="subscription_change_disabled_wifi_ap">SIM abonelik değişikliği nedeniyle Wi-Fi internet paylaşımı devre dışı bırakıldı</string>
     <string name="notify_turn_wifi_off_title">"Wi-Fi'yi kapat"</string>
+    <string name="permlab_thirdPartyKeyguard">üçüncü taraf kilit ekranı</string>
+    <string name="permdesc_thirdPartyKeyguard">Uygulamalara şifresiz kilit ekranı olarak kullanılabilme izni verir.</string>
     <string name="numeric_date_template" formatted="false">%s %s %s</string>
     <string name="month_day_year" formatted="false">%d %B %Y</string>
     <string name="time_of_day" formatted="false">%H:%M:%S</string>
@@ -1791,6 +1795,4 @@ Cihazınız şarj olurken pil tasarrufu otomatik olarak kapatılır."</string>
     <string name="stk_cc_ss_to_ss">SS isteği yeni SS isteği olarak değiştirildi.</string>
     <string name="ellipsis">…</string>
     <string name="ellipsis_two_dots">‥</string>
-    <string name="permlab_thirdPartyKeyguard">üçüncü taraf kilit ekranı</string>
-    <string name="permdesc_thirdPartyKeyguard">Uygulamalara şifresiz kilit ekranı olarak kullanılabilme izni verir.</string>
 </resources>

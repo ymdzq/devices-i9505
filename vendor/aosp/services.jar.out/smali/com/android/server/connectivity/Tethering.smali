@@ -2005,7 +2005,7 @@
 
     .line 711
     .local v9, "r":Landroid/content/res/Resources;
-    const v0, 0x1040634
+    const v0, 0x1040636
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -2244,7 +2244,7 @@
     .line 728
     .end local v6    # "message":Ljava/lang/CharSequence;
     :cond_7
-    const v0, 0x1040635
+    const v0, 0x1040637
 
     invoke-virtual {v9, v0}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 

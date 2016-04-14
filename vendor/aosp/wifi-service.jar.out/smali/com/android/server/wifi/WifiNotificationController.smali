@@ -551,7 +551,7 @@
     .local v0, "color":I
     iget-object v6, p0, Lcom/android/server/wifi/WifiNotificationController;->mContext:Landroid/content/Context;
 
-    const v7, 0x10400da
+    const v7, 0x10400dc
 
     invoke-virtual {v6, v7}, Landroid/content/Context;->getText(I)Ljava/lang/CharSequence;
 

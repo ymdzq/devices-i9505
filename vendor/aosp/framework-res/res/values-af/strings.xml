@@ -140,6 +140,8 @@
     <string name="perf_profile_pwrsv">Bespaar krag</string>
     <string name="perf_profile_bal">Gebalanseerd</string>
     <string name="perf_profile_perf">Werkverrigting</string>
+    <string name="perf_profile_bias_power">Doeltreffendheid</string>
+    <string name="perf_profile_bias_perf">Vinnige</string>
     <string name="theme_install_error_title">Kon nie tema installeer</string>
     <string name="theme_install_error_message">%s kon nie geïnstalleer word nie</string>
     <string name="theme_reset_notification_title">Tema herstel</string>
@@ -215,6 +217,8 @@
     <string name="silent_mode_none">Geen</string>
     <string name="subscription_change_disabled_wifi_ap">Deaktiveer Wi-Fi warmkol weens SIM inskrywing verandering</string>
     <string name="notify_turn_wifi_off_title">Skakel Wi-Fi af</string>
+    <string name="permlab_thirdPartyKeyguard">derde party slotskerm</string>
+    <string name="permdesc_thirdPartyKeyguard">"Laat 'n toep toe om gebruik te word as 'n onveilige skermslot."</string>
     <string name="numeric_date_template" formatted="false">%s/%s/%s</string>
     <string name="month_day_year" formatted="false">%d %B %Y</string>
     <string name="time_of_day" formatted="false">%-l:%M:%S %p</string>

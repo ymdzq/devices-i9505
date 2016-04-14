@@ -253,7 +253,7 @@
 
     .line 161
     .local v0, "res":Landroid/content/res/Resources;
-    const v1, 0x104075c
+    const v1, 0x104075e
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -262,7 +262,7 @@
     iput-object v1, p0, Landroid/widget/SimpleMonthView;->mDayOfWeekTypeface:Ljava/lang/String;
 
     .line 162
-    const v1, 0x104075b
+    const v1, 0x104075d
 
     invoke-virtual {v0, v1}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

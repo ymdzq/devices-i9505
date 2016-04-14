@@ -24,12 +24,12 @@
     .param p2, "message"    # Ljava/lang/String;
 
     .prologue
-    .line 7088
+    .line 7085
     iput-object p1, p0, Lcom/android/server/pm/PackageManagerService$IdmapException;->this$0:Lcom/android/server/pm/PackageManagerService;
 
-    .line 7089
+    .line 7086
     invoke-direct {p0, p2}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
 
-    .line 7090
+    .line 7087
     return-void
 .end method

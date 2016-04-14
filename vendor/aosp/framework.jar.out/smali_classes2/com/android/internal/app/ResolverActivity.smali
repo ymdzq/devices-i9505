@@ -450,7 +450,7 @@
     if-nez v2, :cond_2
 
     .line 395
-    const v4, 0x104061c
+    const v4, 0x104061e
 
     iput v4, p0, Lcom/android/internal/app/ResolverActivity;->mProfileSwitchMessageId:I
 
@@ -480,7 +480,7 @@
     if-eqz v2, :cond_0
 
     .line 397
-    const v4, 0x104061d
+    const v4, 0x104061f
 
     iput v4, p0, Lcom/android/internal/app/ResolverActivity;->mProfileSwitchMessageId:I
 
@@ -1228,7 +1228,7 @@
 
     move-result-object v2
 
-    const v3, 0x10e007e
+    const v3, 0x10e007f
 
     invoke-virtual {v2, v3}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2683,7 +2683,7 @@
 
     move-result-object v5
 
-    const v6, 0x10406a3
+    const v6, 0x10406a5
 
     invoke-virtual {v5, v6}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 

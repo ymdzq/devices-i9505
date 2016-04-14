@@ -152,7 +152,7 @@
 
     .line 1320
     :cond_1
-    const v2, 0x10400e5
+    const v2, 0x10400e7
 
     invoke-virtual {p0, v2}, Landroid/content/Context;->getString(I)Ljava/lang/String;
 

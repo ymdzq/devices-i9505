@@ -37,6 +37,8 @@
 
 .field public static final KEY_ICONS:Ljava/lang/String; = "mixnmatch_icons"
 
+.field public static final KEY_LIVE_LOCK_SCREEN:Ljava/lang/String; = "mixnmatch_live_lock_screen"
+
 .field public static final KEY_LOCKSCREEN:Ljava/lang/String; = "mixnmatch_lockscreen"
 
 .field public static final KEY_NAVIGATION_BAR:Ljava/lang/String; = "mixnmatch_navigation_bar"
@@ -57,7 +59,7 @@
     .locals 3
 
     .prologue
-    .line 271
+    .line 278
     sget-object v0, Landroid/provider/ThemesContract;->AUTHORITY_URI:Landroid/net/Uri;
 
     const-string/jumbo v1, "mixnmatch"
@@ -68,8 +70,8 @@
 
     sput-object v0, Landroid/provider/ThemesContract$MixnMatchColumns;->CONTENT_URI:Landroid/net/Uri;
 
-    .line 320
-    const/16 v0, 0xb
+    .line 328
+    const/16 v0, 0xc
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -139,6 +141,12 @@
 
     aput-object v2, v0, v1
 
+    const/16 v1, 0xb
+
+    const-string/jumbo v2, "mixnmatch_live_lock_screen"
+
+    aput-object v2, v0, v1
+
     sput-object v0, Landroid/provider/ThemesContract$MixnMatchColumns;->ROWS:[Ljava/lang/String;
 
     return-void
@@ -148,7 +156,7 @@
     .locals 0
 
     .prologue
-    .line 270
+    .line 277
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void
@@ -159,7 +167,7 @@
     .param p0, "component"    # Ljava/lang/String;
 
     .prologue
-    .line 340
+    .line 349
     const-string/jumbo v0, "mixnmatch_homescreen"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -168,14 +176,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 341
+    .line 350
     const-string v0, "homescreen_uri"
 
-    .line 365
+    .line 377
     :goto_0
     return-object v0
 
-    .line 342
+    .line 351
     :cond_0
     const-string/jumbo v0, "mixnmatch_lockscreen"
 
@@ -185,12 +193,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 343
+    .line 352
     const-string v0, "lockscreen_uri"
 
     goto :goto_0
 
-    .line 344
+    .line 353
     :cond_1
     const-string/jumbo v0, "mixnmatch_boot_anim"
 
@@ -200,12 +208,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 345
+    .line 354
     const-string v0, "bootanim_uri"
 
     goto :goto_0
 
-    .line 346
+    .line 355
     :cond_2
     const-string/jumbo v0, "mixnmatch_font"
 
@@ -215,12 +223,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 347
+    .line 356
     const-string v0, "font_uri"
 
     goto :goto_0
 
-    .line 348
+    .line 357
     :cond_3
     const-string/jumbo v0, "mixnmatch_icons"
 
@@ -230,12 +238,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 349
+    .line 358
     const-string v0, "icon_uri"
 
     goto :goto_0
 
-    .line 350
+    .line 359
     :cond_4
     const-string/jumbo v0, "mixnmatch_status_bar"
 
@@ -245,12 +253,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 351
+    .line 360
     const-string/jumbo v0, "status_uri"
 
     goto :goto_0
 
-    .line 352
+    .line 361
     :cond_5
     const-string/jumbo v0, "mixnmatch_notifications"
 
@@ -260,7 +268,7 @@
 
     if-eqz v0, :cond_6
 
-    .line 353
+    .line 362
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Notifications mixnmatch component does not have a related column"
@@ -269,7 +277,7 @@
 
     throw v0
 
-    .line 354
+    .line 363
     :cond_6
     const-string/jumbo v0, "mixnmatch_ringtone"
 
@@ -279,7 +287,7 @@
 
     if-eqz v0, :cond_7
 
-    .line 355
+    .line 364
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Ringtone mixnmatch component does not have a related column"
@@ -288,7 +296,7 @@
 
     throw v0
 
-    .line 356
+    .line 365
     :cond_7
     const-string/jumbo v0, "mixnmatch_overlays"
 
@@ -298,12 +306,12 @@
 
     if-eqz v0, :cond_8
 
-    .line 357
+    .line 366
     const-string/jumbo v0, "overlays_uri"
 
     goto :goto_0
 
-    .line 358
+    .line 367
     :cond_8
     const-string/jumbo v0, "mixnmatch_status_bar"
 
@@ -313,7 +321,7 @@
 
     if-eqz v0, :cond_9
 
-    .line 359
+    .line 368
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Status bar mixnmatch component does not have a related column"
@@ -322,7 +330,7 @@
 
     throw v0
 
-    .line 361
+    .line 370
     :cond_9
     const-string/jumbo v0, "mixnmatch_navigation_bar"
 
@@ -332,7 +340,7 @@
 
     if-eqz v0, :cond_a
 
-    .line 362
+    .line 371
     new-instance v0, Ljava/lang/IllegalArgumentException;
 
     const-string v1, "Navigation bar mixnmatch component does not have a related column"
@@ -341,8 +349,27 @@
 
     throw v0
 
-    .line 365
+    .line 373
     :cond_a
+    const-string/jumbo v0, "mixnmatch_live_lock_screen"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    .line 374
+    new-instance v0, Ljava/lang/IllegalArgumentException;
+
+    const-string v1, "Live lock screen mixnmatch component does not have a related column"
+
+    invoke-direct {v0, v1}, Ljava/lang/IllegalArgumentException;-><init>(Ljava/lang/String;)V
+
+    throw v0
+
+    .line 377
+    :cond_b
     const/4 v0, 0x0
 
     goto/16 :goto_0
@@ -353,7 +380,7 @@
     .param p0, "component"    # Ljava/lang/String;
 
     .prologue
-    .line 373
+    .line 385
     const-string/jumbo v0, "mods_homescreen"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -362,14 +389,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 374
+    .line 386
     const-string/jumbo v0, "mixnmatch_homescreen"
 
-    .line 396
+    .line 410
     :goto_0
     return-object v0
 
-    .line 375
+    .line 387
     :cond_0
     const-string/jumbo v0, "mods_icons"
 
@@ -379,12 +406,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 376
+    .line 388
     const-string/jumbo v0, "mixnmatch_icons"
 
     goto :goto_0
 
-    .line 377
+    .line 389
     :cond_1
     const-string/jumbo v0, "mods_lockscreen"
 
@@ -394,12 +421,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 378
+    .line 390
     const-string/jumbo v0, "mixnmatch_lockscreen"
 
     goto :goto_0
 
-    .line 379
+    .line 391
     :cond_2
     const-string/jumbo v0, "mods_fonts"
 
@@ -409,12 +436,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 380
+    .line 392
     const-string/jumbo v0, "mixnmatch_font"
 
     goto :goto_0
 
-    .line 381
+    .line 393
     :cond_3
     const-string/jumbo v0, "mods_bootanim"
 
@@ -424,12 +451,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 382
+    .line 394
     const-string/jumbo v0, "mixnmatch_boot_anim"
 
     goto :goto_0
 
-    .line 383
+    .line 395
     :cond_4
     const-string/jumbo v0, "mods_alarms"
 
@@ -439,12 +466,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 384
+    .line 396
     const-string/jumbo v0, "mixnmatch_alarm"
 
     goto :goto_0
 
-    .line 385
+    .line 397
     :cond_5
     const-string/jumbo v0, "mods_notifications"
 
@@ -454,12 +481,12 @@
 
     if-eqz v0, :cond_6
 
-    .line 386
+    .line 398
     const-string/jumbo v0, "mixnmatch_notifications"
 
     goto :goto_0
 
-    .line 387
+    .line 399
     :cond_6
     const-string/jumbo v0, "mods_ringtones"
 
@@ -469,12 +496,12 @@
 
     if-eqz v0, :cond_7
 
-    .line 388
+    .line 400
     const-string/jumbo v0, "mixnmatch_ringtone"
 
     goto :goto_0
 
-    .line 389
+    .line 401
     :cond_7
     const-string/jumbo v0, "mods_overlays"
 
@@ -484,12 +511,12 @@
 
     if-eqz v0, :cond_8
 
-    .line 390
+    .line 402
     const-string/jumbo v0, "mixnmatch_overlays"
 
     goto :goto_0
 
-    .line 391
+    .line 403
     :cond_8
     const-string/jumbo v0, "mods_status_bar"
 
@@ -499,12 +526,12 @@
 
     if-eqz v0, :cond_9
 
-    .line 392
+    .line 404
     const-string/jumbo v0, "mixnmatch_status_bar"
 
     goto :goto_0
 
-    .line 393
+    .line 405
     :cond_9
     const-string/jumbo v0, "mods_navigation_bar"
 
@@ -514,13 +541,28 @@
 
     if-eqz v0, :cond_a
 
-    .line 394
+    .line 406
     const-string/jumbo v0, "mixnmatch_navigation_bar"
 
     goto/16 :goto_0
 
-    .line 396
+    .line 407
     :cond_a
+    const-string/jumbo v0, "mods_live_lock_screen"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    .line 408
+    const-string/jumbo v0, "mixnmatch_live_lock_screen"
+
+    goto/16 :goto_0
+
+    .line 410
+    :cond_b
     const/4 v0, 0x0
 
     goto/16 :goto_0
@@ -531,7 +573,7 @@
     .param p0, "mixnmatchKey"    # Ljava/lang/String;
 
     .prologue
-    .line 404
+    .line 418
     const-string/jumbo v0, "mixnmatch_homescreen"
 
     invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
@@ -540,14 +582,14 @@
 
     if-eqz v0, :cond_0
 
-    .line 405
+    .line 419
     const-string/jumbo v0, "mods_homescreen"
 
-    .line 427
+    .line 443
     :goto_0
     return-object v0
 
-    .line 406
+    .line 420
     :cond_0
     const-string/jumbo v0, "mixnmatch_icons"
 
@@ -557,12 +599,12 @@
 
     if-eqz v0, :cond_1
 
-    .line 407
+    .line 421
     const-string/jumbo v0, "mods_icons"
 
     goto :goto_0
 
-    .line 408
+    .line 422
     :cond_1
     const-string/jumbo v0, "mixnmatch_lockscreen"
 
@@ -572,12 +614,12 @@
 
     if-eqz v0, :cond_2
 
-    .line 409
+    .line 423
     const-string/jumbo v0, "mods_lockscreen"
 
     goto :goto_0
 
-    .line 410
+    .line 424
     :cond_2
     const-string/jumbo v0, "mixnmatch_font"
 
@@ -587,12 +629,12 @@
 
     if-eqz v0, :cond_3
 
-    .line 411
+    .line 425
     const-string/jumbo v0, "mods_fonts"
 
     goto :goto_0
 
-    .line 412
+    .line 426
     :cond_3
     const-string/jumbo v0, "mixnmatch_boot_anim"
 
@@ -602,12 +644,12 @@
 
     if-eqz v0, :cond_4
 
-    .line 413
+    .line 427
     const-string/jumbo v0, "mods_bootanim"
 
     goto :goto_0
 
-    .line 414
+    .line 428
     :cond_4
     const-string/jumbo v0, "mixnmatch_alarm"
 
@@ -617,12 +659,12 @@
 
     if-eqz v0, :cond_5
 
-    .line 415
+    .line 429
     const-string/jumbo v0, "mods_alarms"
 
     goto :goto_0
 
-    .line 416
+    .line 430
     :cond_5
     const-string/jumbo v0, "mixnmatch_notifications"
 
@@ -632,12 +674,12 @@
 
     if-eqz v0, :cond_6
 
-    .line 417
+    .line 431
     const-string/jumbo v0, "mods_notifications"
 
     goto :goto_0
 
-    .line 418
+    .line 432
     :cond_6
     const-string/jumbo v0, "mixnmatch_ringtone"
 
@@ -647,12 +689,12 @@
 
     if-eqz v0, :cond_7
 
-    .line 419
+    .line 433
     const-string/jumbo v0, "mods_ringtones"
 
     goto :goto_0
 
-    .line 420
+    .line 434
     :cond_7
     const-string/jumbo v0, "mixnmatch_overlays"
 
@@ -662,12 +704,12 @@
 
     if-eqz v0, :cond_8
 
-    .line 421
+    .line 435
     const-string/jumbo v0, "mods_overlays"
 
     goto :goto_0
 
-    .line 422
+    .line 436
     :cond_8
     const-string/jumbo v0, "mixnmatch_status_bar"
 
@@ -677,12 +719,12 @@
 
     if-eqz v0, :cond_9
 
-    .line 423
+    .line 437
     const-string/jumbo v0, "mods_status_bar"
 
     goto :goto_0
 
-    .line 424
+    .line 438
     :cond_9
     const-string/jumbo v0, "mixnmatch_navigation_bar"
 
@@ -692,13 +734,28 @@
 
     if-eqz v0, :cond_a
 
-    .line 425
+    .line 439
     const-string/jumbo v0, "mods_navigation_bar"
 
     goto/16 :goto_0
 
-    .line 427
+    .line 440
     :cond_a
+    const-string/jumbo v0, "mixnmatch_live_lock_screen"
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_b
+
+    .line 441
+    const-string/jumbo v0, "mods_live_lock_screen"
+
+    goto/16 :goto_0
+
+    .line 443
+    :cond_b
     const/4 v0, 0x0
 
     goto/16 :goto_0

@@ -134,7 +134,7 @@
     iput v0, p0, Lcom/android/internal/widget/ActionBarView;->mDisplayOptions:I
 
     .line 134
-    const v0, 0x1040676
+    const v0, 0x1040678
 
     iput v0, p0, Lcom/android/internal/widget/ActionBarView;->mDefaultUpDescription:I
 
@@ -688,7 +688,7 @@
 
     move-result-object v4
 
-    const v5, 0x1040679
+    const v5, 0x104067b
 
     const/4 v6, 0x3
 
@@ -744,7 +744,7 @@
 
     move-result-object v4
 
-    const v5, 0x1040675
+    const v5, 0x1040677
 
     invoke-virtual {v4, v5}, Landroid/content/res/Resources;->getText(I)Ljava/lang/CharSequence;
 
@@ -761,7 +761,7 @@
 
     move-result-object v4
 
-    const v5, 0x1040678
+    const v5, 0x104067a
 
     new-array v6, v9, [Ljava/lang/Object;
 

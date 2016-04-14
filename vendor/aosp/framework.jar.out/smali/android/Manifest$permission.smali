@@ -553,6 +553,8 @@
 
 .field public static final TEMPORARY_ENABLE_ACCESSIBILITY:Ljava/lang/String; = "android.permission.TEMPORARY_ENABLE_ACCESSIBILITY"
 
+.field public static final THIRD_PARTY_KEYGUARD:Ljava/lang/String; = "android.permission.THIRD_PARTY_KEYGUARD"
+
 .field public static final TRANSMIT_IR:Ljava/lang/String; = "android.permission.TRANSMIT_IR"
 
 .field public static final TRUST_LISTENER:Ljava/lang/String; = "android.permission.TRUST_LISTENER"

@@ -30,13 +30,13 @@
     .param p2, "looper"    # Landroid/os/Looper;
 
     .prologue
-    .line 164
+    .line 166
     iput-object p1, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
-    .line 165
+    .line 167
     invoke-direct {p0, p2}, Landroid/os/Handler;-><init>(Landroid/os/Looper;)V
 
-    .line 166
+    .line 168
     return-void
 .end method
 
@@ -47,12 +47,12 @@
     .param p1, "msg"    # Landroid/os/Message;
 
     .prologue
-    .line 170
+    .line 172
     iget v5, p1, Landroid/os/Message;->what:I
 
     packed-switch v5, :pswitch_data_0
 
-    .line 214
+    .line 216
     # getter for: Lcom/android/server/ThemeService;->TAG:Ljava/lang/String;
     invoke-static {}, Lcom/android/server/ThemeService;->access$300()Ljava/lang/String;
 
@@ -80,18 +80,18 @@
 
     invoke-static {v5, v6}, Landroid/util/Log;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 217
+    .line 219
     :cond_0
     :goto_0
     return-void
 
-    .line 172
+    .line 174
     :pswitch_0
     iget-object v3, p1, Landroid/os/Message;->obj:Ljava/lang/Object;
 
     check-cast v3, Ljava/lang/String;
 
-    .line 173
+    .line 175
     .local v3, "pkgName":Ljava/lang/String;
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
@@ -102,7 +102,7 @@
 
     monitor-enter v6
 
-    .line 174
+    .line 176
     :try_start_0
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
@@ -117,7 +117,7 @@
 
     if-nez v5, :cond_1
 
-    .line 176
+    .line 178
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     # getter for: Lcom/android/server/ThemeService;->mThemesToProcessQueue:Ljava/util/ArrayList;
@@ -127,7 +127,7 @@
 
     invoke-virtual {v5, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
-    .line 177
+    .line 179
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     # getter for: Lcom/android/server/ThemeService;->mThemesToProcessQueue:Ljava/util/ArrayList;
@@ -143,12 +143,12 @@
 
     if-ne v5, v7, :cond_1
 
-    .line 178
+    .line 180
     const/4 v5, 0x4
 
     invoke-virtual {p0, v5}, Lcom/android/server/ThemeService$ResourceProcessingHandler;->sendEmptyMessage(I)Z
 
-    .line 181
+    .line 183
     :cond_1
     monitor-exit v6
 
@@ -163,7 +163,7 @@
 
     throw v5
 
-    .line 184
+    .line 186
     .end local v3    # "pkgName":Ljava/lang/String;
     :pswitch_1
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
@@ -175,7 +175,7 @@
 
     monitor-enter v6
 
-    .line 185
+    .line 187
     :try_start_1
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
@@ -192,16 +192,16 @@
 
     check-cast v3, Ljava/lang/String;
 
-    .line 186
+    .line 188
     .restart local v3    # "pkgName":Ljava/lang/String;
     monitor-exit v6
     :try_end_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_1
 
-    .line 187
+    .line 189
     if-eqz v3, :cond_0
 
-    .line 191
+    .line 193
     :try_start_2
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
@@ -216,7 +216,7 @@
 
     move-result-object v2
 
-    .line 192
+    .line 194
     .local v2, "pi":Landroid/content/pm/PackageInfo;
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
@@ -227,7 +227,7 @@
 
     move-result-object v1
 
-    .line 197
+    .line 199
     .end local v2    # "pi":Landroid/content/pm/PackageInfo;
     .local v1, "name":Ljava/lang/String;
     :goto_1
@@ -242,11 +242,11 @@
 
     move-result v4
 
-    .line 198
+    .line 200
     .local v4, "result":I
     if-gez v4, :cond_2
 
-    .line 199
+    .line 201
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     if-eqz v1, :cond_4
@@ -256,14 +256,14 @@
     # invokes: Lcom/android/server/ThemeService;->postFailedThemeInstallNotification(Ljava/lang/String;)V
     invoke-static {v5, v1}, Lcom/android/server/ThemeService;->access$700(Lcom/android/server/ThemeService;Ljava/lang/String;)V
 
-    .line 201
+    .line 203
     :cond_2
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     # invokes: Lcom/android/server/ThemeService;->sendThemeResourcesCachedBroadcast(Ljava/lang/String;I)V
     invoke-static {v5, v3, v4}, Lcom/android/server/ThemeService;->access$800(Lcom/android/server/ThemeService;Ljava/lang/String;I)V
 
-    .line 203
+    .line 205
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     # getter for: Lcom/android/server/ThemeService;->mThemesToProcessQueue:Ljava/util/ArrayList;
@@ -273,7 +273,7 @@
 
     monitor-enter v6
 
-    .line 204
+    .line 206
     :try_start_3
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
@@ -286,7 +286,7 @@
 
     invoke-virtual {v5, v7}, Ljava/util/ArrayList;->remove(I)Ljava/lang/Object;
 
-    .line 205
+    .line 207
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     # getter for: Lcom/android/server/ThemeService;->mThemesToProcessQueue:Ljava/util/ArrayList;
@@ -308,18 +308,18 @@
 
     if-nez v5, :cond_3
 
-    .line 207
+    .line 209
     const/4 v5, 0x4
 
     invoke-virtual {p0, v5}, Lcom/android/server/ThemeService$ResourceProcessingHandler;->sendEmptyMessage(I)Z
 
-    .line 209
+    .line 211
     :cond_3
     monitor-exit v6
     :try_end_3
     .catchall {:try_start_3 .. :try_end_3} :catchall_2
 
-    .line 210
+    .line 212
     iget-object v5, p0, Lcom/android/server/ThemeService$ResourceProcessingHandler;->this$0:Lcom/android/server/ThemeService;
 
     # invokes: Lcom/android/server/ThemeService;->postFinishedProcessing(Ljava/lang/String;)V
@@ -327,7 +327,7 @@
 
     goto/16 :goto_0
 
-    .line 186
+    .line 188
     .end local v3    # "pkgName":Ljava/lang/String;
     .end local v4    # "result":I
     :catchall_1
@@ -340,12 +340,12 @@
 
     throw v5
 
-    .line 193
+    .line 195
     .restart local v3    # "pkgName":Ljava/lang/String;
     :catch_0
     move-exception v0
 
-    .line 194
+    .line 196
     .local v0, "e":Landroid/content/pm/PackageManager$NameNotFoundException;
     const/4 v1, 0x0
 
@@ -357,10 +357,10 @@
     :cond_4
     move-object v1, v3
 
-    .line 199
+    .line 201
     goto :goto_2
 
-    .line 209
+    .line 211
     .end local v1    # "name":Ljava/lang/String;
     :catchall_2
     move-exception v5
@@ -372,7 +372,7 @@
 
     throw v5
 
-    .line 170
+    .line 172
     nop
 
     :pswitch_data_0

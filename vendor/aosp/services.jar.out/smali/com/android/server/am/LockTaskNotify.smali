@@ -81,7 +81,7 @@
 
     move-result-object v1
 
-    const v2, 0x112006b
+    const v2, 0x1120069
 
     invoke-virtual {v1, v2}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -160,7 +160,7 @@
     if-eqz p1, :cond_1
 
     .line 64
-    const v0, 0x104075f
+    const v0, 0x1040761
 
     .line 71
     .local v0, "textResId":I
@@ -203,7 +203,7 @@
     if-eqz v1, :cond_2
 
     .line 66
-    const v0, 0x104075e
+    const v0, 0x1040760
 
     .restart local v0    # "textResId":I
     goto :goto_0
@@ -220,7 +220,7 @@
     if-eqz v1, :cond_4
 
     :cond_3
-    const v0, 0x104075d
+    const v0, 0x104075f
 
     .restart local v0    # "textResId":I
     :goto_1
@@ -228,7 +228,7 @@
 
     .end local v0    # "textResId":I
     :cond_4
-    const v0, 0x10400ce
+    const v0, 0x10400d0
 
     goto :goto_1
 .end method
@@ -239,14 +239,14 @@
 
     .prologue
     .line 78
-    const v0, 0x1040761
+    const v0, 0x1040763
 
     .line 79
     .local v0, "showString":I
     if-eqz p1, :cond_0
 
     .line 80
-    const v0, 0x1040760
+    const v0, 0x1040762
 
     .line 82
     :cond_0

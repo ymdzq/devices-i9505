@@ -4162,9 +4162,9 @@
 
     const-string v4, "com.android.location.service.v3.NetworkLocationProvider"
 
-    const v5, 0x1120054
+    const v5, 0x1120052
 
-    const v6, 0x10400e7
+    const v6, 0x10400e9
 
     const v7, 0x1070032
 
@@ -4217,9 +4217,9 @@
 
     const-string v4, "com.android.location.service.FusedLocationProvider"
 
-    const v5, 0x1120055
+    const v5, 0x1120053
 
-    const v6, 0x10400e8
+    const v6, 0x10400ea
 
     const v7, 0x1070032
 
@@ -4273,9 +4273,9 @@
 
     iget-object v3, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
-    const v4, 0x1120057
+    const v4, 0x1120055
 
-    const v5, 0x10400ea
+    const v5, 0x10400ec
 
     const v6, 0x1070032
 
@@ -4307,7 +4307,7 @@
 
     .line 518
     :cond_3
-    const v3, 0x10400ed
+    const v3, 0x10400ef
 
     move-object/from16 v0, v27
 
@@ -4372,7 +4372,7 @@
 
     .line 529
     :goto_2
-    const v3, 0x10400ee
+    const v3, 0x10400f0
 
     move-object/from16 v0, v27
 
@@ -4476,9 +4476,9 @@
 
     move-result-object v4
 
-    const v5, 0x1120056
+    const v5, 0x1120054
 
-    const v6, 0x10400e9
+    const v6, 0x10400eb
 
     const v7, 0x1070032
 
@@ -4505,9 +4505,9 @@
 
     iget-object v2, v0, Lcom/android/server/LocationManagerService;->mContext:Landroid/content/Context;
 
-    const v3, 0x1120058
+    const v3, 0x1120056
 
-    const v4, 0x10400eb
+    const v4, 0x10400ed
 
     const v5, 0x1070032
 
@@ -4566,9 +4566,9 @@
 
     move-result-object v4
 
-    const v5, 0x1120059
+    const v5, 0x1120057
 
-    const v6, 0x10400ec
+    const v6, 0x10400ee
 
     const v7, 0x1070032
 

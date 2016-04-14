@@ -140,6 +140,8 @@
     <string name="perf_profile_pwrsv">Úsporný</string>
     <string name="perf_profile_bal">Vyvážený</string>
     <string name="perf_profile_perf">Výkonný</string>
+    <string name="perf_profile_bias_power">Efektivita</string>
+    <string name="perf_profile_bias_perf">Výkon</string>
     <string name="theme_install_error_title">Instalace motivu selhala</string>
     <string name="theme_install_error_message">Instalace „%s“ selhala</string>
     <string name="theme_reset_notification_title">Obnovit motiv</string>
@@ -215,6 +217,8 @@
     <string name="silent_mode_none">Žádný</string>
     <string name="subscription_change_disabled_wifi_ap">Vypnutý hotspot Wi-Fi kvůli změně připojení SIM</string>
     <string name="notify_turn_wifi_off_title">Vypnout Wi-Fi</string>
+    <string name="permlab_thirdPartyKeyguard">zámek obrazovky třetí strany</string>
+    <string name="permdesc_thirdPartyKeyguard">Umožňuje být použit jako ne zcela bezpečný zámek obrazovky.</string>
     <string name="numeric_date_template" formatted="false">%s. %s. %s</string>
     <string name="month_day_year" formatted="false">%-e. %B %Y</string>
     <string name="time_of_day" formatted="false">%-k:%M:%S</string>
@@ -1791,6 +1795,4 @@ Při nabíjení zařízení se spořič baterie automaticky vypne."</string>
     <string name="stk_cc_ss_to_ss">Požadavek SS byl změněn na nový požadavek SS.</string>
     <string name="ellipsis">…</string>
     <string name="ellipsis_two_dots">..</string>
-    <string name="permlab_thirdPartyKeyguard">zámek obrazovky třetí strany</string>
-    <string name="permdesc_thirdPartyKeyguard">Umožňuje být použit jako ne zcela bezpečný zámek obrazovky.</string>
 </resources>

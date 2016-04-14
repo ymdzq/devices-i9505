@@ -35,6 +35,10 @@
 
 .field public static final ICON_PREVIEW_3:Ljava/lang/String; = "icon_preview_3"
 
+.field public static final LIVE_LOCK_SCREEN_PREVIEW:Ljava/lang/String; = "live_lock_screen_preview"
+
+.field public static final LIVE_LOCK_SCREEN_THUMBNAIL:Ljava/lang/String; = "live_lock_screen_thumbnail"
+
 .field public static final LOCK_WALLPAPER_PREVIEW:Ljava/lang/String; = "lock_wallpaper_preview"
 
 .field public static final LOCK_WALLPAPER_THUMBNAIL:Ljava/lang/String; = "lock_wallpaper_thumbnail"
@@ -87,7 +91,7 @@
     .locals 3
 
     .prologue
-    .line 440
+    .line 456
     sget-object v0, Landroid/provider/ThemesContract;->AUTHORITY_URI:Landroid/net/Uri;
 
     const-string/jumbo v1, "previews"
@@ -98,7 +102,7 @@
 
     sput-object v0, Landroid/provider/ThemesContract$PreviewColumns;->CONTENT_URI:Landroid/net/Uri;
 
-    .line 447
+    .line 463
     sget-object v0, Landroid/provider/ThemesContract;->AUTHORITY_URI:Landroid/net/Uri;
 
     const-string v1, "applied_previews"
@@ -109,7 +113,7 @@
 
     sput-object v0, Landroid/provider/ThemesContract$PreviewColumns;->APPLIED_URI:Landroid/net/Uri;
 
-    .line 455
+    .line 471
     sget-object v0, Landroid/provider/ThemesContract;->AUTHORITY_URI:Landroid/net/Uri;
 
     const-string v1, "components_previews"
@@ -120,8 +124,8 @@
 
     sput-object v0, Landroid/provider/ThemesContract$PreviewColumns;->COMPONENTS_URI:Landroid/net/Uri;
 
-    .line 639
-    const/16 v0, 0x18
+    .line 667
+    const/16 v0, 0x1a
 
     new-array v0, v0, [Ljava/lang/String;
 
@@ -269,6 +273,18 @@
 
     aput-object v2, v0, v1
 
+    const/16 v1, 0x18
+
+    const-string v2, "live_lock_screen_preview"
+
+    aput-object v2, v0, v1
+
+    const/16 v1, 0x19
+
+    const-string v2, "live_lock_screen_thumbnail"
+
+    aput-object v2, v0, v1
+
     sput-object v0, Landroid/provider/ThemesContract$PreviewColumns;->VALID_KEYS:[Ljava/lang/String;
 
     return-void
@@ -278,7 +294,7 @@
     .locals 0
 
     .prologue
-    .line 434
+    .line 450
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     return-void

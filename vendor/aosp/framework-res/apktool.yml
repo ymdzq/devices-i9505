@@ -1,14 +1,25 @@
-version: 2.0.3-8fee34-SNAPSHOT
+!!brut.androlib.meta.MetaInfo
 apkFileName: framework-res.apk
+compressionType: false
+doNotCompress:
+- arsc
+- raw
+- dic
+- html
+- bin
+- frag
+- vert
 isFrameworkApk: true
+packageInfo:
+  forcedPackageId: '1'
+  renameManifestPackage: null
 sdkInfo:
   minSdkVersion: '22'
   targetSdkVersion: '22'
-packageInfo:
-  forced-package-id: '1'
+sharedLibrary: false
+unknownFiles: {}
+usesFramework: null
+version: 2.1.0-1e8d95-SNAPSHOT
 versionInfo:
   versionCode: '22'
-  versionName: 5.1.1-141f2428df
-sharedLibrary: false
-doNotCompress:
-- arsc
+  versionName: 5.1.1-c1d0dfdb79

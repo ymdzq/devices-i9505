@@ -348,7 +348,7 @@
 
     move-result-object v4
 
-    const v7, 0x1120086
+    const v7, 0x1120084
 
     invoke-virtual {v4, v7}, Landroid/content/res/Resources;->getBoolean(I)Z
 
@@ -1161,11 +1161,11 @@
 
     const v3, 0x1080373
 
-    const v4, 0x10401df
+    const v4, 0x10401e1
 
-    const v5, 0x10401e0
+    const v5, 0x10401e2
 
-    const v6, 0x10401e1
+    const v6, 0x10401e3
 
     move-object v1, p0
 
@@ -1642,7 +1642,7 @@
 
     const v1, 0x1080375
 
-    const v2, 0x10401d9
+    const v2, 0x10401db
 
     invoke-direct {v0, p0, v1, v2}, Lcom/android/internal/policy/impl/GlobalActions$4;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
 
@@ -1689,7 +1689,7 @@
 
     const v1, 0x108002f
 
-    const v2, 0x10401e3
+    const v2, 0x10401e5
 
     invoke-direct {v0, p0, v1, v2}, Lcom/android/internal/policy/impl/GlobalActions$6;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
 
@@ -1721,7 +1721,7 @@
 
     const v1, 0x1080382
 
-    const v2, 0x10401e2
+    const v2, 0x10401e4
 
     invoke-direct {v0, p0, v1, v2}, Lcom/android/internal/policy/impl/GlobalActions$5;-><init>(Lcom/android/internal/policy/impl/GlobalActions;II)V
 

@@ -2507,10 +2507,13 @@
 
     .line 1737
     .local v1, "front":Ljava/lang/String;
+    add-int/lit8 v2, v2, 0x1
+
+    .line 1738
     :goto_3
     if-ge v2, v4, :cond_4
 
-    .line 1738
+    .line 1739
     new-instance v3, Landroid/os/StrictMode$ViolationInfo;
 
     .end local v3    # "info":Landroid/os/StrictMode$ViolationInfo;
@@ -2521,7 +2524,7 @@
     :goto_4
     invoke-direct {v3, p0, v10}, Landroid/os/StrictMode$ViolationInfo;-><init>(Landroid/os/Parcel;Z)V
 
-    .line 1739
+    .line 1738
     .restart local v3    # "info":Landroid/os/StrictMode$ViolationInfo;
     add-int/lit8 v2, v2, 0x1
 
@@ -2547,7 +2550,7 @@
 
     goto :goto_2
 
-    .line 1738
+    .line 1739
     .restart local v1    # "front":Ljava/lang/String;
     :cond_3
     const/4 v10, 0x0

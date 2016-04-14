@@ -140,6 +140,8 @@
     <string name="perf_profile_pwrsv">Virransäästö</string>
     <string name="perf_profile_bal">Tasapainotettu</string>
     <string name="perf_profile_perf">Suorituskyky</string>
+    <string name="perf_profile_bias_power">Virransäästö</string>
+    <string name="perf_profile_bias_perf">Suorituskyky</string>
     <string name="theme_install_error_title">Teeman asennus epäonnistui</string>
     <string name="theme_install_error_message">Teeman \"%s\" asennus epäonnistui</string>
     <string name="theme_reset_notification_title">Teeman resetointi</string>
@@ -215,6 +217,8 @@
     <string name="silent_mode_none">Ei mitään</string>
     <string name="subscription_change_disabled_wifi_ap">Wi-Fi-tukiasema poistettiin käytöstä SIMin vaihdon vuoksi</string>
     <string name="notify_turn_wifi_off_title">Poista Wi-Fi käytöstä</string>
+    <string name="permlab_thirdPartyKeyguard">kolmannen osapuolen lukitusnäyttö</string>
+    <string name="permdesc_thirdPartyKeyguard">Sallii sovellusta käytettävän epäturvallisena lukitusnäyttönä.</string>
     <string name="numeric_date_template" formatted="false">%s.%s.%s</string>
     <string name="month_day_year" formatted="false">%-e. %B %Y</string>
     <string name="time_of_day" formatted="false">%-k.%M.%S</string>
@@ -1791,6 +1795,4 @@ Virransäästö poistuu käytöstä automaattisesti, kun laitteesi latautuu."</s
     <string name="stk_cc_ss_to_ss">SS-pyyntö muutettiin uudeksi SS-pyynnöksi.</string>
     <string name="ellipsis">…</string>
     <string name="ellipsis_two_dots">..</string>
-    <string name="permlab_thirdPartyKeyguard">kolmannen osapuolen lukitusnäyttö</string>
-    <string name="permdesc_thirdPartyKeyguard">Sallii sovellusta käytettävän epäturvallisena lukitusnäyttönä.</string>
 </resources>

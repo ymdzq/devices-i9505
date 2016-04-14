@@ -76,30 +76,30 @@
     .end annotation
 
     .prologue
-    .line 682
+    .line 690
     .local p4, "bitmaps":Ljava/util/List;, "Ljava/util/List<Landroid/graphics/Bitmap;>;"
     .local p6, "results":Ljava/util/List;, "Ljava/util/List<Lcom/android/server/AssetAtlasService$WorkerResult;>;"
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
-    .line 683
+    .line 691
     iput p1, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mStart:I
 
-    .line 684
+    .line 692
     iput p2, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mEnd:I
 
-    .line 685
+    .line 693
     iput p3, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mStep:I
 
-    .line 686
+    .line 694
     iput-object p4, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mBitmaps:Ljava/util/List;
 
-    .line 687
+    .line 695
     iput-object p6, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mResults:Ljava/util/List;
 
-    .line 688
+    .line 696
     iput-object p7, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mSignal:Ljava/util/concurrent/CountDownLatch;
 
-    .line 691
+    .line 699
     int-to-float v1, p5
 
     const v2, 0x3f4ccccd    # 0.8f
@@ -108,23 +108,23 @@
 
     float-to-int v0, v1
 
-    .line 693
+    .line 701
     .local v0, "threshold":I
     :goto_0
     const/high16 v1, 0x400000
 
     if-le v0, v1, :cond_0
 
-    .line 694
+    .line 702
     shr-int/lit8 v0, v0, 0x1
 
     goto :goto_0
 
-    .line 696
+    .line 704
     :cond_0
     iput v0, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mThreshold:I
 
-    .line 697
+    .line 705
     return-void
 .end method
 
@@ -136,16 +136,16 @@
     .param p4, "entry"    # Landroid/graphics/Atlas$Entry;
 
     .prologue
-    .line 729
+    .line 737
     const/4 v4, 0x0
 
-    .line 730
+    .line 738
     .local v4, "total":I
     new-instance v0, Landroid/graphics/Atlas;
 
     invoke-direct {v0, p1, p2, p3}, Landroid/graphics/Atlas;-><init>(Landroid/graphics/Atlas$Type;II)V
 
-    .line 732
+    .line 740
     .local v0, "atlas":Landroid/graphics/Atlas;
     iget-object v5, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mBitmaps:Ljava/util/List;
 
@@ -153,7 +153,7 @@
 
     move-result v2
 
-    .line 733
+    .line 741
     .local v2, "count":I
     const/4 v3, 0x0
 
@@ -161,7 +161,7 @@
     :goto_0
     if-ge v3, v2, :cond_1
 
-    .line 734
+    .line 742
     iget-object v5, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mBitmaps:Ljava/util/List;
 
     invoke-interface {v5, v3}, Ljava/util/List;->get(I)Ljava/lang/Object;
@@ -170,7 +170,7 @@
 
     check-cast v1, Landroid/graphics/Bitmap;
 
-    .line 735
+    .line 743
     .local v1, "bitmap":Landroid/graphics/Bitmap;
     invoke-virtual {v1}, Landroid/graphics/Bitmap;->getWidth()I
 
@@ -186,16 +186,16 @@
 
     if-eqz v5, :cond_0
 
-    .line 736
+    .line 744
     add-int/lit8 v4, v4, 0x1
 
-    .line 733
+    .line 741
     :cond_0
     add-int/lit8 v3, v3, 0x1
 
     goto :goto_0
 
-    .line 740
+    .line 748
     .end local v1    # "bitmap":Landroid/graphics/Bitmap;
     :cond_1
     return v4
@@ -207,7 +207,7 @@
     .locals 11
 
     .prologue
-    .line 701
+    .line 709
     const-string v8, "AssetAtlas"
 
     new-instance v9, Ljava/lang/StringBuilder;
@@ -238,12 +238,12 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 703
+    .line 711
     new-instance v2, Landroid/graphics/Atlas$Entry;
 
     invoke-direct {v2}, Landroid/graphics/Atlas$Entry;-><init>()V
 
-    .line 704
+    .line 712
     .local v2, "entry":Landroid/graphics/Atlas$Entry;
     invoke-static {}, Landroid/graphics/Atlas$Type;->values()[Landroid/graphics/Atlas$Type;
 
@@ -261,7 +261,7 @@
 
     aget-object v6, v0, v4
 
-    .line 705
+    .line 713
     .local v6, "type":Landroid/graphics/Atlas$Type;
     iget v7, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mStart:I
 
@@ -271,7 +271,7 @@
 
     if-ge v7, v8, :cond_3
 
-    .line 706
+    .line 714
     const/16 v3, 0x300
 
     .local v3, "height":I
@@ -280,30 +280,30 @@
 
     if-ge v3, v8, :cond_2
 
-    .line 708
+    .line 716
     mul-int v8, v7, v3
 
     iget v9, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mThreshold:I
 
     if-gt v8, v9, :cond_1
 
-    .line 706
+    .line 714
     :cond_0
     add-int/lit8 v3, v3, 0x40
 
     goto :goto_2
 
-    .line 710
+    .line 718
     :cond_1
     invoke-direct {p0, v6, v7, v3, v2}, Lcom/android/server/AssetAtlasService$ComputeWorker;->packBitmaps(Landroid/graphics/Atlas$Type;IILandroid/graphics/Atlas$Entry;)I
 
     move-result v1
 
-    .line 711
+    .line 719
     .local v1, "count":I
     if-lez v1, :cond_0
 
-    .line 712
+    .line 720
     iget-object v8, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mResults:Ljava/util/List;
 
     new-instance v9, Lcom/android/server/AssetAtlasService$WorkerResult;
@@ -312,7 +312,7 @@
 
     invoke-interface {v8, v9}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
-    .line 715
+    .line 723
     iget-object v8, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mBitmaps:Ljava/util/List;
 
     invoke-interface {v8}, Ljava/util/List;->size()I
@@ -321,7 +321,7 @@
 
     if-ne v1, v8, :cond_0
 
-    .line 705
+    .line 713
     .end local v1    # "count":I
     :cond_2
     iget v8, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mStep:I
@@ -330,14 +330,14 @@
 
     goto :goto_1
 
-    .line 704
+    .line 712
     .end local v3    # "height":I
     :cond_3
     add-int/lit8 v4, v4, 0x1
 
     goto :goto_0
 
-    .line 723
+    .line 731
     .end local v6    # "type":Landroid/graphics/Atlas$Type;
     .end local v7    # "width":I
     :cond_4
@@ -345,12 +345,12 @@
 
     if-eqz v8, :cond_5
 
-    .line 724
+    .line 732
     iget-object v8, p0, Lcom/android/server/AssetAtlasService$ComputeWorker;->mSignal:Ljava/util/concurrent/CountDownLatch;
 
     invoke-virtual {v8}, Ljava/util/concurrent/CountDownLatch;->countDown()V
 
-    .line 726
+    .line 734
     :cond_5
     return-void
 .end method

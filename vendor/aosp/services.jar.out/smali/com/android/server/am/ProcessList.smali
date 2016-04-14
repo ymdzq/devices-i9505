@@ -1662,7 +1662,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e0009
+    const v20, 0x10e000a
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1674,7 +1674,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e0008
+    const v20, 0x10e0009
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2211,7 +2211,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e000b
+    const v20, 0x10e000c
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -2223,7 +2223,7 @@
 
     move-result-object v19
 
-    const v20, 0x10e000a
+    const v20, 0x10e000b
 
     invoke-virtual/range {v19 .. v20}, Landroid/content/res/Resources;->getInteger(I)I
 
