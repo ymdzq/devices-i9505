@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/pref_ram_info" android:selectable="false" android:key="ram_info" android:summary="@string/empty_summary" />
+    <Preference android:title="@string/pref_cpu_info" android:selectable="false" android:key="cpu_info" android:summary="@string/empty_summary" />
+    <Preference android:title="@string/pref_gpu_info" android:selectable="false" android:key="gpu_info" android:summary="@string/empty_summary" />
+</PreferenceScreen>

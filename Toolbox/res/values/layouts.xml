@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="layout" name="about_fragment">false</item>
+    <item type="layout" name="bugreport_fragment">false</item>
+    <item type="layout" name="irlib_fragment">false</item>
+    <item type="layout" name="ledify_fragment">false</item>
+    <item type="layout" name="settings_fragment">false</item>
+</resources>

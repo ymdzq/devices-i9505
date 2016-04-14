@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/cat_common">
+        <EditTextPreference android:title="@string/pref_username" android:key="pref_username" android:summary="@string/pref_username_sum_default" android:defaultValue="" />
+        <SwitchPreference android:title="@string/doublepress_toexit" android:key="pref_back_press" android:defaultValue="true" android:summaryOn="@string/doublepress_toexit_sum_on" android:summaryOff="@string/doublepress_toexit_sum_off" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/hardware_category">
+        <SwitchPreference android:title="@string/pref_realtime_cpu" android:key="pref_realtime_cpu" android:defaultValue="true" android:summaryOn="@string/pref_realtime_cpu_summary_on" android:summaryOff="@string/pref_realtime_cpu_summary_off" />
+        <SwitchPreference android:title="@string/pref_realtime_gpu" android:key="pref_realtime_gpu" android:defaultValue="true" android:summaryOn="@string/pref_realtime_gpu_summary_on" android:summaryOff="@string/pref_realtime_gpu_summary_off" />
+        <ListPreference android:entries="@array/realtime_timing_entries" android:title="@string/pref_realtime_info_timing" android:key="pref_realtime_info_timing" android:summary="@string/pref_realtime_info_timing_summary" android:defaultValue="500" android:entryValues="@array/realtime_timing_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/nav_cat_personalize">
+        <ListPreference android:entries="@array/app_theme_entries" android:title="@string/pref_theme" android:key="pref_apptheme" android:summary="@string/pref_theme_summary" android:defaultValue="darkindigo" android:entryValues="@array/app_theme_values" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/support_us_cat">
+        <SwitchPreference android:title="@string/show_ad_title" android:key="pref_ad" android:defaultValue="true" android:summaryOn="@string/show_ad_sum_on" android:summaryOff="@string/show_ad_sum_off" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/toolbox_version" android:key="app_version" android:summary="@string/toolbox_ver_summary" />
+    <Preference android:title="@string/community" android:key="community" android:summary="@string/community_summary">
+        <intent android:action="android.intent.action.VIEW" android:data="https://plus.google.com/u/0/communities/117218177262334420007" />
+    </Preference>
+    <Preference android:selectable="false" android:key="license" android:summary="@string/app_license" />
+</PreferenceScreen>

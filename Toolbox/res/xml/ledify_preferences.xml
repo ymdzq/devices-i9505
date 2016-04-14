@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/ledify_title" android:selectable="false" android:summary="@string/ledify_summary" />
+    <SwitchPreference android:title="@string/pref_ledify_power" android:key="pref_ledify_power" android:defaultValue="true" android:summaryOn="@string/pref_ledify_power_on" android:summaryOff="@string/pref_ledify_power_off" />
+    <ListPreference android:entries="@array/ledify_entries" android:title="@string/pref_ledify_pattern" android:key="pref_ledify_pattern" android:summary="@string/pref_ledify_pattern_default" android:dependency="pref_ledify_power" android:defaultValue="jdcdefault" android:entryValues="@array/ledify_values" />
+    <PreferenceCategory android:title="@string/ledify_cat_preview">
+        <Preference android:key="pref_ledify_preview" android:summary="@string/pref_ledify_preview" android:dependency="pref_ledify_power" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_ledify_wide_default">
+        <Preference android:key="pref_ledify_reset" android:summary="@string/pref_ledify_reset_config" />
+    </PreferenceCategory>
+</PreferenceScreen>

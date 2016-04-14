@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_theme_entries">
+        <item>Light (Amber)</item>
+        <item>Light (Blue)</item>
+        <item>Light (Green)</item>
+        <item>Light (Indigo)</item>
+        <item>Light (Red)</item>
+        <item>Light (Teal)</item>
+        <item>Dark (Blue)</item>
+        <item>Dark (Blue Grey)</item>
+        <item>Dark (Indigo)</item>
+    </string-array>
+    <string-array name="ledify_entries">
+        <item>JDCTeam (default)</item>
+        <item>Heartbeat (blue)</item>
+        <item>Heartbeat (green)</item>
+        <item>Heartbeat (red)</item>
+        <item>Nexus</item>
+        <item>Nexus (reverse)</item>
+        <item>Police</item>
+        <item>Samsung</item>
+    </string-array>
+    <string-array name="realtime_timing_entries">
+        <item>250 ms</item>
+        <item>500 ms (default)</item>
+        <item>750 ms</item>
+        <item>1 second</item>
+        <item>1.25 seconds</item>
+        <item>1.5 seconds</item>
+        <item>1.75 seconds</item>
+        <item>2 seconds</item>
+    </string-array>
+    <string-array name="app_theme_values">
+        <item>lightamber</item>
+        <item>lightblue</item>
+        <item>lightgreen</item>
+        <item>lightindigo</item>
+        <item>lightred</item>
+        <item>lightteal</item>
+        <item>darkblue</item>
+        <item>darkbluegrey</item>
+        <item>darkindigo</item>
+    </string-array>
+    <string-array name="ledify_values">
+        <item>jdcdefault</item>
+        <item>heartbeatblue</item>
+        <item>heartbeatgreen</item>
+        <item>heartbeatred</item>
+        <item>nexus</item>
+        <item>nexusreverse</item>
+        <item>police</item>
+        <item>secdefault</item>
+    </string-array>
+    <string-array name="realtime_timing_values">
+        <item>250</item>
+        <item>500</item>
+        <item>750</item>
+        <item>1000</item>
+        <item>1250</item>
+        <item>1500</item>
+        <item>1750</item>
+        <item>2000</item>
+    </string-array>
+</resources>

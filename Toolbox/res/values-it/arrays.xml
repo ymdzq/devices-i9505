@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="app_theme_entries">
+        <item>Chiaro (Ambra)</item>
+        <item>Chiaro (Blu)</item>
+        <item>Chiaro (Verde)</item>
+        <item>Chiaro (Indaco)</item>
+        <item>Chiaro (Rosso)</item>
+        <item>Chiaro (Foglia di tè)</item>
+        <item>Scuro (Blu)</item>
+        <item>Scuro (Grigio-blu)</item>
+        <item>Scuro (Indaco)</item>
+    </string-array>
+    <string-array name="ledify_entries">
+        <item>JDCTeam (default)</item>
+        <item>Battito cardiaco (blu)</item>
+        <item>Battito cardiaco (verde)</item>
+        <item>Battito cardiaco (rosso)</item>
+        <item>Nexus</item>
+        <item>Nexus (al contrario)</item>
+        <item>Polizia</item>
+        <item>Samsung</item>
+    </string-array>
+    <string-array name="realtime_timing_entries">
+        <item>250 ms</item>
+        <item>500 ms (default)</item>
+        <item>750 ms</item>
+        <item>1 secondo</item>
+        <item>1.25 secondi</item>
+        <item>1.5 secondi</item>
+        <item>1.75 secondi</item>
+        <item>2 secondi</item>
+    </string-array>
+</resources>

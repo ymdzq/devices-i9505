@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Preference android:title="@string/irdriver_title" android:selectable="false" android:summary="@string/irdriver_summary" />
+    <SwitchPreference android:title="@string/pref_ir" android:key="pref_ir" android:defaultValue="false" android:summaryOn="@string/pref_ir_sum_on" android:summaryOff="@string/pref_ir_sum" />
+</PreferenceScreen>

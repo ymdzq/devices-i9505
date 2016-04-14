@@ -54,9 +54,9 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/pri-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth NfcNci KeyChain Tag HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
+vendor_saved_apps := AntHalService Bluetooth NfcNci KeyChain Tag HTMLViewer UserDictionaryProvider BackupRestoreConfirmation \
                      FusedLocation PrintSpooler SharedStorageBackup  ExternalStorageProvider InputDevices \
-                     ProxyHandler Shell DefaultContainerService WAPPushManager Stk TimeService SamsungDoze
+                     ProxyHandler Shell DefaultContainerService WAPPushManager Stk TimeService SamsungDoze STweaks
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -65,7 +65,7 @@ vendor_saved_apps := Bluetooth NfcNci KeyChain Tag HTMLViewer UserDictionaryProv
 # You need ro decode FMRadio.apk to the project directory(use apktool d FMRadio.apk) first,
 # and then you can make it by:   make FMRadio
 #-----------------------------------------------------------------------------
-#vendor_modify_apps := FMRadio
+vendor_modify_apps := Toolbox
 
 ##############################################################################
 # The value decides which vendor jar you want to modify.
@@ -87,11 +87,13 @@ vendor_modify_jars := android.policy framework services telephony-common wifi-se
 # The value decides which board system file you want to save.
 # The default value is nothing.
 # You can configure the board system file path which relative to the system directory in the board release.
-# You should config "lib64/libwebviewchromium.so" for 64 bit system.
+# You should add "lib64/libwebviewchromium.so" for 64 bit system.
 #-----------------------------------------------------------------------------
-board_saved_files := bin/shutdownanimation \
+board_saved_files := bin/bootanimation \
+                 bin/shutdownanimation \
+		 etc/apns-conf.xml \
                  lib/libwebviewchromium.so \
-		 media/shutanimation.zip
+		 media/bootanimation.zip
 
 ##############################################################################
 # The value decides which board system apk you want to remove.

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="@string/cat_common">
+        <menu>
+            <item android:icon="@drawable/ic_menu_home" android:id="@id/nav_item_home" android:title="@string/nav_item_home" />
+            <item android:icon="@drawable/ic_menu_about" android:id="@id/nav_item_about" android:title="@string/nav_item_about" />
+            <item android:icon="@drawable/ic_menu_settings" android:id="@id/nav_item_settings" android:title="@string/nav_item_settings" />
+            <item android:icon="@drawable/ic_menu_bugreport" android:id="@id/nav_item_bugreport" android:title="@string/nav_item_bugreport" />
+        </menu>
+    </item>
+    <item android:title="@string/nav_cat_personalize">
+        <menu>
+            <item android:icon="@drawable/ic_menu_ledify" android:id="@id/nav_item_ledify" android:title="@string/nav_item_ledify" />
+        </menu>
+    </item>
+    <item android:title="@string/nav_cat_system">
+        <menu>
+            <item android:icon="@drawable/ic_menu_ir" android:id="@id/nav_item_libswitcher" android:title="@string/nav_item_libswitcher" />
+            <item android:icon="@drawable/ic_menu_hardware" android:id="@id/nav_item_hardwareinfo" android:title="@string/nav_item_hardware" />
+        </menu>
+    </item>
+</menu>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">欢迎回来</string>
+    <string name="abc_action_bar_up_description">返回页面顶部</string>
+    <string name="abc_action_menu_overflow_description">更多选项</string>
+    <string name="abc_action_mode_done">确定</string>
+    <string name="abc_activity_chooser_view_see_all">显示所有</string>
+    <string name="abc_activitychooserview_choose_application">选择一个应用程序</string>
+    <string name="abc_search_hint">寻找…</string>
+    <string name="abc_searchview_description_clear">删除查询</string>
+    <string name="abc_searchview_description_query">搜索查询</string>
+    <string name="abc_searchview_description_search">搜索</string>
+    <string name="abc_searchview_description_submit">提交查询</string>
+    <string name="abc_searchview_description_voice">语音搜索</string>
+    <string name="abc_shareactionprovider_share_with">分享</string>
+    <string name="abc_shareactionprovider_share_with_application">分享到 %s</string>
+    <string name="abc_toolbar_collapse_description">崩溃</string>
+    <string name="common_open_on_phone">打开手机</string>
+    <string name="issue_report">问题报告</string>
+    <string name="negative_button">取消</string>
+    <string name="positive_button">确认</string>
+    <string name="pref_ir">使用老版 IR 驱动程序</string>
+    <string name="pref_ir_sum">如果你需要 IR LED 的应用遇到问题，启用此选项，通常是过时的应用会遇到。一旦启用开关，在 IR 应用里将禁用 \"Use alternate commands\" 选项</string>
+    <string name="pref_ir_sum_on">如果你需要 IR LED 的应用遇到问题，禁用此选项，通常是最新的应用会遇到。一旦启用开关，在 IR 应用里将禁用 \"Use alternate commands\" 选项</string>
+    <string name="reboot_title">需要重新启动</string>
+    <string name="alert_dialog_error">错误</string>
+    <string name="alert_dialog_error_ledify">当前的ROM找不到 LEDify 文件</string>
+    <string name="alert_dialog_error_message">无法应用更改。你没有允许超级用户？</string>
+    <string name="cat_common">常用</string>
+    <string name="clicks">"点击："</string>
+    <string name="community_summary">加入我们的官方群，和我们保持联系</string>
+    <string name="current">"当前："</string>
+    <string name="doublepress_toexit">双击退出</string>
+    <string name="doublepress_toexit_sum_off">如果侧边栏是关闭的，按一次返回键将关闭该应用</string>
+    <string name="doublepress_toexit_sum_on">如果侧边栏是关闭的，按两次返回键将关闭该应用</string>
+    <string name="first_load_message">"工具箱是一个一体化设备管理器。
+它有一些其他 ROM 没有额外的功能，例如 LEDify，它可以让你个性化设置设备启动时通知 LED 的颜色模式；LibSwitcher (又名 \"IR 驱动\") 为任何 IR 应用提供支持。
+
+JDCTeam 祝你愉快！"</string>
+    <string name="hardware_category">硬件</string>
+    <string name="irdriver_summary">"这是一个设备 IR LED 驱动程序的管理器，
+它以智能的方式，使任何 IR 应用都能正常工作。
+你可以在2个 IR 驱动程序之间切换。"</string>
+    <string name="ledify_cat_preview">预览</string>
+    <string name="ledify_defconfig_success">默认配置文件已创建</string>
+    <string name="ledify_defconfig_unsuccess">无法创建默认配置文件</string>
+    <string name="ledify_summary">"LEDify 是一个设备启动时通知 LED 的模式的管理器。你可以在我们制作的模式之间做出选择。"</string>
+    <string name="nav_cat_personalize">个性化设置</string>
+    <string name="nav_cat_system">系统</string>
+    <string name="nav_item_about">关于</string>
+    <string name="nav_item_bugreport">问题报告</string>
+    <string name="nav_item_hardware">硬件信息</string>
+    <string name="nav_item_home">首页</string>
+    <string name="nav_item_libswitcher">IR 驱动</string>
+    <string name="nav_item_settings">设置</string>
+    <string name="pref_cpu_info">CPU 频率</string>
+    <string name="pref_gpu_info">GPU 频率</string>
+    <string name="pref_ledify_pattern">模式</string>
+    <string name="pref_ledify_pattern_default">通知 LED 运行的颜色模式</string>
+    <string name="pref_ledify_power">电源</string>
+    <string name="pref_ledify_power_off">启动时通知 LED 已禁用</string>
+    <string name="pref_ledify_power_on">启动时通知 LED 已启用</string>
+    <string name="pref_ledify_preview">按此处预览5秒当前设置</string>
+    <string name="pref_ledify_reset_config">按此处恢复默认设置</string>
+    <string name="pref_ledify_speed">速度</string>
+    <string name="pref_ledify_speed_default">选择的模式的颜色转换速度。选择 \"Default\" 将设置为默认模式的速度</string>
+    <string name="pref_ledify_speed_example">颜色转换速度</string>
+    <string name="pref_ledify_speed_example_sum">"例子：
+sleep 0.10 for 100ms
+sleep 0.50 for 500ms
+sleep 1 for 1s"</string>
+    <string name="pref_ledify_wide_default">默认设置</string>
+    <string name="pref_ram_info">RAM 存储器</string>
+    <string name="pref_ram_info_free">"可用："</string>
+    <string name="pref_ram_info_total">"大小："</string>
+    <string name="pref_ram_info_used">"已用："</string>
+    <string name="pref_realtime_cpu">显示实时 CPU 频率</string>
+    <string name="pref_realtime_cpu_summary_off">显示每个核心固定的 CPU 频率单位 MHz</string>
+    <string name="pref_realtime_cpu_summary_on">显示每个核心根据使用情况的实时 CPU 频率单位 MHz。 \"Offline\" 意味着该核心是在待机</string>
+    <string name="pref_realtime_gpu">显示实时 GPU 频率</string>
+    <string name="pref_realtime_gpu_summary_off">显示固定的 GPU 最大频率单位 MHz</string>
+    <string name="pref_realtime_gpu_summary_on">显示根据使用情况的实时 GPU 频率单位 MHz</string>
+    <string name="pref_realtime_info_timing">更新频率</string>
+    <string name="pref_realtime_info_timing_summary">硬件信息的实时刷新率</string>
+    <string name="pref_theme">主题</string>
+    <string name="pref_theme_summary">改变应用程序主题</string>
+    <string name="pref_username">你的名字</string>
+    <string name="pref_username_sum_default">按此处输入你的名字</string>
+    <string name="quick_start">"从左侧向右滑动显示侧边栏！"</string>
+    <string name="reboot_message">"需要重新启动以应用更改。
+你想现在重新启动吗？"</string>
+    <string name="show_ad_sum_off">显示一个小广告的横幅，支持开发者</string>
+    <string name="show_ad_sum_on">感谢你！♡</string>
+    <string name="show_ad_title">显示广告</string>
+    <string name="support_us_cat">支持我们</string>
+    <string name="time">"Time: "</string>
+    <string name="toolbox_version">应用版本</string>
+    <string name="twice_to_exit">再次按返回退出</string>
+    <string name="under_development">开发中的功能</string>
+    <string name="welcome">欢迎</string>
+    <string name="welcomeback">“欢迎回来”</string>
+    <string name="accept">接受</string>
+    <string name="app_name">工具箱</string>
+    <string name="create_calendar_message">允许广告创建一个日历事件吗？</string>
+    <string name="create_calendar_title">创建日历事件</string>
+    <string name="decline">谢绝</string>
+    <string name="game_over">游戏结束！</string>
+    <string name="irdriver_title">IR 驱动切换器</string>
+    <string name="nav_header_name">JDC 工具箱</string>
+    <string name="navdrawer_close">Close navigation drawer</string>
+    <string name="navdrawer_open">Open navigation drawer</string>
+    <string name="pref_ir_title">IR 驱动</string>
+    <string name="store_picture_message">Allow Ad to store image in Picture gallery?</string>
+    <string name="store_picture_title">保存图片</string>
+    <string name="user_record">"记录："</string>
+</resources>
